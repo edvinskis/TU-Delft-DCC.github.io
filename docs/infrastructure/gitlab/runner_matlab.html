@@ -479,7 +479,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/edvinskis/TU-Delft-DCC.github.io/issues/new/choose" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/TU-Delft-DCC/TU-Delft-DCC.github.io/issues/new/choose" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -551,7 +551,7 @@ Tip
 <section id="step-1.-request-a-tu-delft-vps" class="level3">
 <h3 class="anchored" data-anchor-id="step-1.-request-a-tu-delft-vps">Step 1. Request a TU Delft VPS</h3>
 <p>If you want to work with the TU Delft Gitlab instance and you want to implement CI/CD pipelines, then you need to install a Gitlab runner on your own. Runners are the agents that run the CI/CD jobs that come from GitLab. Currently, the TU Delft instance does not provide this feature out-of-the-box. Therefore, we need a separate (virtual) server to run the Gitlab runners and execute the jobs in the CI/CD pipeline.</p>
-<p>The TU Delft offers Virtual Private Servers (VPS) for researchers through the <a href="https://tudelft.topdesk.net/tas/public/ssp/content/serviceflow?unid=418c986f186d4934848dc2712039ed34">TopDesk selfservice portal</a>. If you don’t have a VPS already, please follow this guide to <a href="https://tu-delft-dcc.github.io/infrastructure/VPS_request.html">request a Virtual Private Server</a></p>
+<p>The TU Delft offers Virtual Private Servers (VPS) for researchers through the <a href="https://tudelft.topdesk.net/tas/public/ssp/content/serviceflow?unid=418c986f186d4934848dc2712039ed34">TopDesk selfservice portal</a>. If you don’t have a VPS already, please follow this guide to <a href="../../../docs/infrastructure/VPS_request.html">request a Virtual Private Server</a>)</p>
 <p><strong>VPS requirements</strong></p>
 <ul>
 <li>50Gb disk space (the Matlab installation in this guide requires ~10 Gb, but this depends on the size of the installed addons)</li>
@@ -559,7 +559,7 @@ Tip
 </section>
 <section id="step-2.-setting-up-gitlab-runners" class="level3">
 <h3 class="anchored" data-anchor-id="step-2.-setting-up-gitlab-runners">Step 2. Setting up Gitlab runners</h3>
-<p>To set up a gitlab runner on the VPS, please follow this <a href="https://tu-delft-dcc.github.io/infrastructure/gitlab/gitlab_docker.html">guide for setting up GitLab runners</a>.</p>
+<p>To set up a gitlab runner on the VPS, please follow this <a href="../../../docs/infrastructure/gitlab/gitlab_docker.html">guide for setting up GitLab runners</a>.</p>
 <p><strong>TLDR</strong></p>
 <ol type="1">
 <li><p>Install docker with</p>
@@ -1106,7 +1106,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/edvinskis\.github\.io\/TU-Delft-DCC\.github\.io\/");
+      var filterRegex = new RegExp("https:\/\/tu-delft-dcc\.github\.io\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -1450,11 +1450,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>By TU Delft Digital Competence Center. Content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a> license.</p>
+<p>By TU Delft Digital Competence Centre. Content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a> license.</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/edvinskis/TU-Delft-DCC.github.io/issues/new/choose" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/TU-Delft-DCC/TU-Delft-DCC.github.io/issues/new/choose" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
