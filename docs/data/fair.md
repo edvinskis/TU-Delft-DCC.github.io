@@ -1,5 +1,5 @@
 ---
-date-modified:
+date-modified: last-modified
 title: FAIR data
 author_1:
 author_2:

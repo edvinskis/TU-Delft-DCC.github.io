@@ -1,5 +1,5 @@
 ---
-date-modified:
+date-modified: last-modified
 title: About the DCC
 author_1:
 author_2:

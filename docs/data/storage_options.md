@@ -1,5 +1,5 @@
 ---
-date-modified:
+date-modified: last-modified
 title: TU Delft data storage
 author_1:
 author_2:

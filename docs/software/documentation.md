@@ -1,5 +1,5 @@
 ---
-date-modified:
+date-modified: last-modified
 title: Software documentation
 author_1: 
 author_2: 
