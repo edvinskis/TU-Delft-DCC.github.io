@@ -1,14 +1,12 @@
 ---
 date-modified: last-modified
 title: FAIR checklist for research software
-author_1:
-author_2:
-maintainer_1: John Doe
-maintainer_2: Joe Doe
-corresponding: maintainer_1
+author_1: Maurits Kok
+author_2: Elviss Dvinskis
+maintainer_1:
+maintainer_2:
+corresponding:
 ---
-
-# FAIR checklist for research software
 
 The goal of the FAIR principles is to improve research transparency, reproducibility and reusability. To achieve this, your research needs to be described through metadata, should be open for inspection, well-documented, and well structured. This ensures that it can be replicated, expanded upon, merged, reinterpreted, or reimplemented. The acronym FAIR stands for:
 

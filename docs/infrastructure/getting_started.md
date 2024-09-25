@@ -1,11 +1,14 @@
 ---
-section: infrastructure
+date-modified: last-modified
 title: Overview
 author_1: Maurits Kok
 author_2: Jose Urra
+maintainer_1:
+maintainer_2:
+corresponding:
 ---
 
-# Getting started
+## Getting started
 
 ```{note}
  The following content has been adapted from [Susan Branchett’s](https://www.tudelft.nl/staff/s.e.branchett/?cHash=245b0ce9092ea7f97c549dd5bda8b221) March 2020 blogpost:["How can the TU Delft support your research computing needs?"](https://sebranchett.github.io/TUDlife/2020/03/18/Support-for-Research-Computing.html)

@@ -1,12 +1,12 @@
-<!-- ---
-section: infrastructure
-title: Request VPS
-version: 1.0
+---
+date-modified: last-modified
+title: Request a VPS
 author_1: Ashley Cryan
 author_2:
---- -->
-
-# Request a Virtual Private Server (VPS)
+maintainer_1:
+maintainer_2:
+corresponding:
+---
 
 ## Background
 This guide describes the essentials for requesting and setting up a TU Delft managed server. A server is a computer that can handle requests. Servers are often a critical component of architectural solutions for data management. There are many reasons why you as a researcher may need to request a server, for example:

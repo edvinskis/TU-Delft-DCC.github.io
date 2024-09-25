@@ -1,11 +1,13 @@
-<!-- ---
-section: resources
-title: Curriculum
+---
+date-modified: last-modified
+title: Research Software Curriculum
 author_1: Ashley Cryan
 author_2: Maurits Kok
---- -->
+maintainer_1:
+maintainer_2:
+corresponding:
+---
 
-# Research Software Curriculum
 These materials represent a curated curriculum designed to help you develop and maintain your repository and code base. All of the resources listed below are free to access and use, and supplementary material like video lessons has been added where possible and relevant.
 
 ## Bash

@@ -1,4 +1,12 @@
-# Courses and workshops
+---
+date-modified: last-modified
+title: Courses and workshops
+author_1:
+author_2:
+maintainer_1:
+maintainer_2:
+corresponding:
+---
 
 ## Training for researchers at the TU Delft
 The TU Delft organises courses for researchers on data management, research software development, and open science. For an overview of available courses, please visit the [website](https://www.tudelft.nl/en/library/research-data-management/r/training-events/training-for-researchers).

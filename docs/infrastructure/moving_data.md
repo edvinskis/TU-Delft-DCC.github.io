@@ -1,4 +1,12 @@
-# Moving data to your server
+---
+date-modified: last-modified
+title: Moving data to your server
+author_1:
+author_2:
+maintainer_1:
+maintainer_2:
+corresponding:
+---
 
 ## Copy Data from Client to Host using ProxyCommand
 
