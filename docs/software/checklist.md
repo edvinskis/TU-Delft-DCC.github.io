@@ -1,5 +1,6 @@
 ---
 date-modified: last-modified
+title: FAIR checklist for research software
 author_1:
 author_2:
 maintainer_1: John Doe
