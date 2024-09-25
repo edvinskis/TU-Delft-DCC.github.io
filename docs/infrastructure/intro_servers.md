@@ -1,4 +1,12 @@
-# Remote servers
+---
+date-modified: last-modified
+title: Remote servers
+author_1:
+author_2:
+maintainer_1: John Doe
+maintainer_2: Joe Doe
+corresponding: maintainer_1
+---
 
 TU Delf offers employees the use of Faculty Managed Servers. The only condition is that it is not possible to use these servers to set up services that are already provided by the basic services of SSC ICT. All Faculty Managed Servers available as standard are virtual. 
 
