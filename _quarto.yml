@@ -30,8 +30,8 @@ website:
   # cookie-consent: true
   #
   site-url: https://tu-delft-dcc.github.io/
-  repo-url: https://github.com/TU-Delft-DCC/TU-Delft-DCC.github.io/
-  issue-url: https://github.com/TU-Delft-DCC/TU-Delft-DCC.github.io/issues/new/choose
+  repo-url: https://github.com/edvinskis/TU-Delft-DCC.github.io/
+  issue-url: https://github.com/edvinskis/TU-Delft-DCC.github.io/issues/new/choose
   repo-actions: [issue]
   page-navigation: true
   page-footer:
@@ -39,7 +39,7 @@ website:
     right: 
           If you find this content useful, please consider giving us a star on GitHub.
           <script async defer src="https://buttons.github.io/buttons.js"></script>
-          <a class="github-button" href="https://github.com/TU-Delft-DCC/TU-Delft-DCC.github.io" data-icon="star" data-size="small" data-show-count="false" aria-label="Star TU-Delft-DCC/TU-Delft-DCC.github.io on GitHub">Star</a>   
+          <a class="github-button" href="https://github.com/edvinskis/TU-Delft-DCC.github.io" data-icon="star" data-size="small" data-show-count="false" aria-label="Star edvinskis/TU-Delft-DCC.github.io on GitHub">Star</a>   
   bread-crumbs: true # Breadcrumbs in Quarto websites are a type of secondary navigation that shows the user's current location within the site hierarchy
   navbar:
     logo: docs/img/logo.png
@@ -57,7 +57,7 @@ website:
       #   text: FAQ   
     tools:
       - icon: github
-        href: https://github.com/TU-Delft-DCC/TU-Delft-DCC.github.io/
+        href: https://github.com/edvinskis/TU-Delft-DCC.github.io/
         text: DCC GitHub
   sidebar:
     style: "docked"
