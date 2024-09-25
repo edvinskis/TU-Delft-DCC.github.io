@@ -1,11 +1,12 @@
-<!-- ---
-section: software
-title: Software Management Plan
+---
+date-modified: last-modified
+title: Software management plan
 author_1: Maurits Kok
-author_2: 
---- -->
-
-# Software management plan
+author_2:
+maintainer_1:
+maintainer_2:
+corresponding:
+---
 
 Research software plays a crucial role in academic research and has become a key output of many research projects. A software management plan helps to implement best practices during software development and ensures that software is accessible and reusable in the short and longer term. It also contributes to the reproducibility of results and stimulates collaborative work on open-source software for research. 
 

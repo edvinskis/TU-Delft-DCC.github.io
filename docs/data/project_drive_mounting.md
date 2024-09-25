@@ -1,11 +1,12 @@
-<!-- ---
-section: data
-title: Mount Project Drive
+---
+date-modified: last-modified
+title: Mount Project Drive on Server
 author_1: Raúl Ortiz Merino
 author_2: Maurits Kok
---- -->
-
-# Mount Project Drive on Server
+maintainer_1:
+maintainer_2:
+corresponding:
+--- 
 
 ## What this documentation will help achieve
 Project drive storage from TU Delft ICT can be mounted and made accessible in your (TU Delft) Virtual Private Server.

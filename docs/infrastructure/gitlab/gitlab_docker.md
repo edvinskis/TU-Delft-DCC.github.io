@@ -1,11 +1,12 @@
-<!-- ---
-section: gitlab
+---
+date-modified: last-modified
 title: CI with Gitlab
 author_1: Ashley Cryan
 author_2: Maurits Kok
---- -->
-
-# Continuous Integration with GitLab
+maintainer_1:
+maintainer_2:
+corresponding:
+---
 
 ## Background
 If you happen to be working with TU Delft GitLab instance and you want to implement DevOps or CI/CD pipelines, then you need to install a GitLab runner on your own. This should runner should be in a server, responding to changes such as commits or pull requests in your GitLab repository.

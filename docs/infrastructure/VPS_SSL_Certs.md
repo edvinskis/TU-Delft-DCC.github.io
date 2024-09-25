@@ -1,11 +1,12 @@
-<!-- ---
-section: infrastructure
-title: Request SSL Certificate
+---
+date-modified: last-modified
+title: Configure SSL certificates
 author_1: Ashley Cryan
 author_2:
---- -->
-
-# Configure SSL certificates
+maintainer_1:
+maintainer_2:
+corresponding:
+---
 
 ## Background
 It is common practice to have web servers serving content over HTTPS, which is the secure version of HTTP. In order to do this and make the connection secure, you need an SSL certificate from a certificate signing authority.

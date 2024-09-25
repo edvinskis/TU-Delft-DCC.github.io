@@ -1,11 +1,12 @@
-<!-- ---
-section: infrastructure
+---
+date-modified: last-modified
 title: Set up an Apache web server
 author_1: Ashley Cryan
-author_2: 
---- -->
-
-# Setting up an Apache web server
+author_2:
+maintainer_1:
+maintainer_2:
+corresponding:
+---
 
 ## Background
 If you want to host a website for your lab, or a web application of some sort, you are going to need to work with a webserver. Apache Web Server is a software package that turns a computer into an HTTP server. That is, it sends web pages – stored as HTML files – to people on the internet who request them. It is open-source software, which means it can be used and modified freely.
