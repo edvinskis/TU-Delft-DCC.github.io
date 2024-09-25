@@ -1,9 +1,11 @@
-<!-- ---
-section: software
-title: FAIR4RS checklist
-author_1: Maurits Kok
-author_2: Elviss Dvinskis
---- -->
+---
+date-modified: last-modified
+author_1:
+author_2:
+maintainer_1: John Doe
+maintainer_2: Joe Doe
+corresponding: maintainer_1
+---
 
 # FAIR checklist for research software
 
