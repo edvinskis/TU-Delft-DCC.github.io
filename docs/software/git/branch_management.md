@@ -1,12 +1,11 @@
----
-date-modified: last-modified
+<!-- ---
+section: software
 title: Branch management
 author_1: Maurits Kok
-author_2:
-maintainer_1:
-maintainer_2:
-corresponding:
----
+author_2: 
+--- -->
+
+# Branch management
 
 Branch management is an important consideration when working collaboratively with Git and GitHub. In Git, branches are a part of your everyday development process. Git branches are effectively a pointer to a snapshot of your changes. When you want to add a new feature or fix a bug — no matter how big or how small — you spawn a new branch to encapsulate your changes.
 

@@ -1,12 +1,11 @@
----
-date-modified: last-modified
-title: Using a docker container with a GUI
+<!-- ---
+section: containers
+title: Docker users
 author_1: Maurits Kok
 author_2:
-maintainer_1:
-maintainer_2:
-corresponding:
----
+--- -->
+
+# Using a docker container with a GUI
 
 Docker is an open platform for developing, shipping, and running applications. Docker provides the ability to package and run an application in a loosely isolated environment called a container. Containers are lightweight and contain everything needed to run the application, so you do not need to rely on what is currently installed on the host system. You can easily share containers while you work, and be sure that everyone you share with gets the same container that works in the same way.
 

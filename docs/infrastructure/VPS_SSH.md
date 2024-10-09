@@ -1,12 +1,4 @@
----
-date-modified: last-modified
-title: Configure SSH Tunneling
-author_1: 
-author_2:
-maintainer_1:
-maintainer_2:
-corresponding:
----
+# Configure SSH Tunneling
 
 To connect to a remote host, TU Delft uses a *proxy server*, know as  **bastion**. To reach a remote host, a user has to connect first to the **bastion** and from there to the remote host. However, a user can connect directly to the remote host using *ssh tunneling*.
 

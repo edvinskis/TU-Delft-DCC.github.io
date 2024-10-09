@@ -1,12 +1,11 @@
----
-date-modified: last-modified
-title: Prepare data for publishing
+<!-- ---
+section: data
+title: Data publishing
 author_1: Aleksandra Wilczynska
 author_2:
-maintainer_1:
-maintainer_2:
-corresponding:
----
+--- -->
+
+# Prepare data for publishing  
 
 If you would like to publish your data collection in 4TU.ResearchData or another data repository, it is advisable that you discuss the publishing process, including the reuse and [citation](https://www.tudelft.nl/en/library/research-data-management/r/publish/cite-your-data) of the original datasets and appropriate [licensing](https://data.4tu.nl/info/en/use/publish-cite/upload-your-data-in-our-data-repository/licencing) options with your faculty [Data Steward](https://www.tudelft.nl/library/research-data-management/r/support/data-stewardship/contact). 
 

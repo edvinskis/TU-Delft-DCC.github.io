@@ -1,12 +1,4 @@
----
-date-modified: last-modified
-title: Configure one-step SSH to server
-author_1: 
-author_2:
-maintainer_1:
-maintainer_2:
-corresponding:
----
+# Configure one-step SSH to server
 
 ## Background
 The default login procedure to VPS from TU Delft is to connect to the Bastion host (an intermediary server) and then to your server, so it is a two-step process.  Steps A and B are described by ICT admin in the email confirming deployment of your server.

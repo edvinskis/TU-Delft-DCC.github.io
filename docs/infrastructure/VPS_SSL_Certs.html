@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Configure SSL certificates – DCC Guides</title>
+<title>vps_ssl_certs – DCC Guides</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -145,7 +145,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-    <a href="https://github.com/edvinskis/TU-Delft-DCC.github.io/" title="DCC GitHub" class="quarto-navigation-tool px-1" aria-label="DCC GitHub"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/TU-Delft-DCC/TU-Delft-DCC.github.io/" title="DCC GitHub" class="quarto-navigation-tool px-1" aria-label="DCC GitHub"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
@@ -459,7 +459,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
+  <li><a href="#configure-ssl-certificates" id="toc-configure-ssl-certificates" class="nav-link active" data-scroll-target="#configure-ssl-certificates">Configure SSL certificates</a>
+  <ul class="collapse">
+  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background">Background</a></li>
   <li><a href="#what-this-documentation-will-help-achieve" id="toc-what-this-documentation-will-help-achieve" class="nav-link" data-scroll-target="#what-this-documentation-will-help-achieve">What this documentation will help achieve</a></li>
   <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites">Prerequisites</a></li>
   <li><a href="#toolssoftware" id="toc-toolssoftware" class="nav-link" data-scroll-target="#toolssoftware">Tools/Software</a></li>
@@ -470,37 +472,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#step-3.-submit-certificate-server-request-to-tu-delft-ict-via-topdesk-form" id="toc-step-3.-submit-certificate-server-request-to-tu-delft-ict-via-topdesk-form" class="nav-link" data-scroll-target="#step-3.-submit-certificate-server-request-to-tu-delft-ict-via-topdesk-form">Step 3. Submit Certificate Server Request to TU Delft ICT via TopDesk form</a></li>
   </ul></li>
   <li><a href="#notes-and-next-steps" id="toc-notes-and-next-steps" class="nav-link" data-scroll-target="#notes-and-next-steps">Notes and Next Steps</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/edvinskis/TU-Delft-DCC.github.io/issues/new/choose" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/TU-Delft-DCC/TU-Delft-DCC.github.io/issues/new/choose" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../docs/infrastructure/intro_servers.html">⚙️ <strong>Computing Infrastructure</strong></a></li><li class="breadcrumb-item"><a href="../../docs/infrastructure/intro_servers.html">Remote servers</a></li><li class="breadcrumb-item"><a href="../../docs/infrastructure/VPS_SSL_Certs.html">Configure SSL certificates</a></li></ol></nav>
-<div class="quarto-title">
-<h1 class="title">Configure SSL certificates</h1>
-</div>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    <div>
-    <div class="quarto-title-meta-heading">Modified</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date-modified">September 25, 2024</p>
-    </div>
-  </div>
-    
-  </div>
-  
-
-
-</header>
-
-
+<!-- ---
+section: infrastructure
+title: Request SSL Certificate
+author_1: Ashley Cryan
+author_2:
+--- -->
+<section id="configure-ssl-certificates" class="level1">
+<h1>Configure SSL certificates</h1>
 <section id="background" class="level2">
 <h2 class="anchored" data-anchor-id="background">Background</h2>
 <p>It is common practice to have web servers serving content over HTTPS, which is the secure version of HTTP. In order to do this and make the connection secure, you need an SSL certificate from a certificate signing authority.</p>
@@ -598,6 +587,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>To use your SSL certificate with your web server, you need to change some configuration settings based on the web server you are using (e.g., Apache, nginx). See ___Set up an Apache web server for more information.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -1185,11 +1175,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/edvinskis/TU-Delft-DCC.github.io/issues/new/choose" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/TU-Delft-DCC/TU-Delft-DCC.github.io/issues/new/choose" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 If you find this content useful, please consider giving us a star on GitHub.
 <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
-<p><a class="github-button" href="https://github.com/edvinskis/TU-Delft-DCC.github.io" data-icon="star" data-size="small" data-show-count="false" aria-label="Star edvinskis/TU-Delft-DCC.github.io on GitHub">Star</a></p>
+<p><a class="github-button" href="https://github.com/TU-Delft-DCC/TU-Delft-DCC.github.io" data-icon="star" data-size="small" data-show-count="false" aria-label="Star TU-Delft-DCC/TU-Delft-DCC.github.io on GitHub">Star</a></p>
 </div>
   </div>
 </footer>

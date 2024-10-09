@@ -1,12 +1,4 @@
----
-date-modified: last-modified
-title: Configure login with SSH
-author_1:
-author_2:
-maintainer_1:
-maintainer_2:
-corresponding:
----
+# Configure login with ssh
 
 ## Background
 

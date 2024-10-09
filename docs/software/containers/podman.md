@@ -1,13 +1,4 @@
----
-date-modified: last-modified
-title: Podman
-author_1:
-author_2:
-maintainer_1:
-maintainer_2:
-corresponding:
----
-
+# Podman
 Docker is not available on [RHEL8](https://www.redhat.com/en/enterprise-linux-8) systems anymore. You can use the replacement podman.
 In most cases you can replace the "docker" command with "podman"
 like:

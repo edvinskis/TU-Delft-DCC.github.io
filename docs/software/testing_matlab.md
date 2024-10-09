@@ -1,12 +1,11 @@
----
-date-modified: last-modified
+<!-- ---
+section: testing
 title: Testing with MATLAB
-author_1: Maurits Kok
-author_2:
-maintainer_1:
-maintainer_2:
-corresponding:
----
+author_1: Maurits Kok 
+author_2: 
+--- -->
+
+# Testing with MATLAB
 
 In this guide, we will discuss writing and running tests with MATLAB. See the [documentation from Matlab](https://nl.mathworks.com/help/matlab/matlab-unit-test-framework.html) for more information.
 

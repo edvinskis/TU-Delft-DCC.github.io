@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CI with Gitlab – DCC Guides</title>
+<title>gitlab_docker – DCC Guides</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -145,7 +145,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-    <a href="https://github.com/edvinskis/TU-Delft-DCC.github.io/" title="DCC GitHub" class="quarto-navigation-tool px-1" aria-label="DCC GitHub"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/TU-Delft-DCC/TU-Delft-DCC.github.io/" title="DCC GitHub" class="quarto-navigation-tool px-1" aria-label="DCC GitHub"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
@@ -459,7 +459,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
+  <li><a href="#continuous-integration-with-gitlab" id="toc-continuous-integration-with-gitlab" class="nav-link active" data-scroll-target="#continuous-integration-with-gitlab">Continuous Integration with GitLab</a>
+  <ul class="collapse">
+  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background">Background</a></li>
   <li><a href="#quick-overview-of-how-it-works" id="toc-quick-overview-of-how-it-works" class="nav-link" data-scroll-target="#quick-overview-of-how-it-works">Quick overview of how it works</a></li>
   <li><a href="#what-this-documentation-will-help-achieve" id="toc-what-this-documentation-will-help-achieve" class="nav-link" data-scroll-target="#what-this-documentation-will-help-achieve">What this documentation will help achieve</a></li>
   <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites">Prerequisites</a></li>
@@ -477,37 +479,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#step-9.-register-the-runner-using-authentication-token" id="toc-step-9.-register-the-runner-using-authentication-token" class="nav-link" data-scroll-target="#step-9.-register-the-runner-using-authentication-token">Step 9. Register the runner using authentication token</a></li>
   <li><a href="#step-10.-check-that-the-cicd-process-is-activated-and-your-pipeline-runs-successfully" id="toc-step-10.-check-that-the-cicd-process-is-activated-and-your-pipeline-runs-successfully" class="nav-link" data-scroll-target="#step-10.-check-that-the-cicd-process-is-activated-and-your-pipeline-runs-successfully">Step 10. Check that the CI/CD process is activated and your pipeline runs successfully</a></li>
   </ul></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/edvinskis/TU-Delft-DCC.github.io/issues/new/choose" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/TU-Delft-DCC/TU-Delft-DCC.github.io/issues/new/choose" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/infrastructure/intro_servers.html">⚙️ <strong>Computing Infrastructure</strong></a></li><li class="breadcrumb-item"><a href="../../../docs/infrastructure/gitlab/gitlab_intro.html">TU Delft GitLab</a></li><li class="breadcrumb-item"><a href="../../../docs/infrastructure/gitlab/gitlab_docker.html">Continuous Integration with GitLab</a></li></ol></nav>
-<div class="quarto-title">
-<h1 class="title">CI with Gitlab</h1>
-</div>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    <div>
-    <div class="quarto-title-meta-heading">Modified</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date-modified">September 25, 2024</p>
-    </div>
-  </div>
-    
-  </div>
-  
-
-
-</header>
-
-
+<!-- ---
+section: gitlab
+title: CI with Gitlab
+author_1: Ashley Cryan
+author_2: Maurits Kok
+--- -->
+<section id="continuous-integration-with-gitlab" class="level1">
+<h1>Continuous Integration with GitLab</h1>
 <section id="background" class="level2">
 <h2 class="anchored" data-anchor-id="background">Background</h2>
 <p>If you happen to be working with TU Delft GitLab instance and you want to implement DevOps or CI/CD pipelines, then you need to install a GitLab runner on your own. This should runner should be in a server, responding to changes such as commits or pull requests in your GitLab repository.</p>
@@ -673,6 +662,7 @@ This guide was created using multiple references on GitLab runner and Docker. If
 * https://semaphoreci.com/blog/cicd-pipeline -->
 
 
+</section>
 </section>
 </section>
 
@@ -1261,11 +1251,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/edvinskis/TU-Delft-DCC.github.io/issues/new/choose" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/TU-Delft-DCC/TU-Delft-DCC.github.io/issues/new/choose" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 If you find this content useful, please consider giving us a star on GitHub.
 <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
-<p><a class="github-button" href="https://github.com/edvinskis/TU-Delft-DCC.github.io" data-icon="star" data-size="small" data-show-count="false" aria-label="Star edvinskis/TU-Delft-DCC.github.io on GitHub">Star</a></p>
+<p><a class="github-button" href="https://github.com/TU-Delft-DCC/TU-Delft-DCC.github.io" data-icon="star" data-size="small" data-show-count="false" aria-label="Star TU-Delft-DCC/TU-Delft-DCC.github.io on GitHub">Star</a></p>
 </div>
   </div>
 </footer>

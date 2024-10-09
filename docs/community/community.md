@@ -1,12 +1,4 @@
----
-date-modified: last-modified
-title: Community
-author_1:
-author_2:
-maintainer_1:
-maintainer_2:
-corresponding:
----
+# Community
 
 ## Partners within the TU Delft
 

@@ -1,12 +1,4 @@
----
-date-modified: last-modified
-title: About the DCC
-author_1:
-author_2:
-maintainer_1:
-maintainer_2:
-corresponding:
----
+# About the DCC
 
 The TU Delft Digital Competence Centre (DCC) is an on-campus initiative to help researchers make research data FAIR, improve research software, and apply computing practices to increase the efficiency of the research process. The DCC is an initiative of the Open Science Programme at TU Delft designed to benefit researchers at all levels.
 

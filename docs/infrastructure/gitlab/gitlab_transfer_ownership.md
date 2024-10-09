@@ -1,12 +1,11 @@
----
-date-modified: last-modified
+<!-- ---
+section: gitlab
 title: Transfer ownership of a GitLab repository
 author_1: Lora Armstrong
 author_2: Maurits Kok
-maintainer_1:
-maintainer_2:
-corresponding:
----
+--- -->
+
+# Transfer ownership of a GitLab repository
 
 ## Background
 

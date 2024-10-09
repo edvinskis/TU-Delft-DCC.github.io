@@ -1,12 +1,4 @@
----
-date-modified: last-modified
-title: FAIR assessment cards
-author_1: Maurits Kok
-author_2: Elviss Dvinskis
-maintainer_1:
-maintainer_2:
-corresponding:
----
+# FAIR assessment cards
 
 Add the cards below as issues to your repository to track the progress of adopting the best practices for FAIR research software.
 

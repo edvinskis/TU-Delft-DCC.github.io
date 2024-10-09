@@ -1,12 +1,11 @@
----
-date-modified: last-modified
-title: Sync with Project Drive and SURFDrive with Unison
+<!-- ---
+section: data
+title: Sync with Unison
 author_1: Ashley Cryan
 author_2:
-maintainer_1:
-maintainer_2:
-corresponding:
----
+--- -->
+
+# Sync with Project Drive and SURFDrive with Unison
 
 ## Background
 
