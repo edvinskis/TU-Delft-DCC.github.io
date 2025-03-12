@@ -14,7 +14,7 @@
     "text": "“Before relying on a new experimental device, an experimental scientist always establishes its accuracy. A new detector is calibrated when the scientist observes its responses to known input signals. The results of this calibration are compared against the expected response.”\n[From Testing and Continuous Integration with Python, created by K. Huff]\nSimulations and analyses using software should be held to the same standards as experimental measurement devices!\nFor a solid introduction and motivation on writing tests, we recommend the lesson on testing from the Code Refinery.",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "Software testing"
     ]
   },
@@ -26,7 +26,7 @@
     "text": "Approach\n\nWhat to test?\nWhen writing tests, ask yourself the following questions: - How would you manually check the correctness of the code? - Do you need to test a particular parameter space? - What do you compare the result to? - How much time would it take to run the module (and therefore the test)?\n\n\nType of tests\n\nUnit test: testing of individual units of source code (scripts, functions, classes).\nIntegration test: testing of a combination of individual units as a group.\nRegression test: re-running all tests to ensure that the previously developed and tested code still performes after a code change.",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "Software testing"
     ]
   },
@@ -38,7 +38,7 @@
     "text": "Add the cards below as issues to your repository to track the progress of adopting the best practices for FAIR research software.",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "FAIR Software",
       "FAIR assessment cards"
     ]
@@ -51,7 +51,7 @@
     "text": "Version Control\n_Essential_\n- [ ] Use [git](https://www.atlassian.com/git) as a version control system \n- [ ] Upload your project on [GitHub](https://github.com/) or [TU Delft GitLab](https://gitlab.tudelft.nl/)\n\n_Recommended_  \n- [ ] Make your repository [public](https://coderefinery.github.io/social-coding/)\n- [ ] Consider your [branch hygiene](https://coderefinery.github.io/git-branch-design/)\n- [ ] Use a branching model (e.g. [GitFlow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow))\n- [ ] Use [meaningful commit messages](https://www.git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project#_commit_guidelines)",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "FAIR Software",
       "FAIR assessment cards"
     ]
@@ -64,7 +64,7 @@
     "text": "Collaboration\n_Essential_  \n- [ ] Make use of [GitHub issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)\n\n_Recommended_\n- [ ] [Contribution guidelines](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors)\n- [ ] [Code of conduct](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-code-of-conduct-to-your-project)",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "FAIR Software",
       "FAIR assessment cards"
     ]
@@ -77,7 +77,7 @@
     "text": "Project documentation\n_Essential_  \n- [ ] [README](https://www.makeareadme.com)\n- [ ] Apply a TU Delft pre-approved [LICENSE](https://zenodo.org/records/4629635)\n- [ ] [CITATION](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files)",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "FAIR Software",
       "FAIR assessment cards"
     ]
@@ -90,7 +90,7 @@
     "text": "Software documentation\n_Essential_  \n- [ ] Source code documentation ([docstrings](https://numpydoc.readthedocs.io/en/latest/format.html))\n- [ ] Document your project dependencies\n- [ ] Installation instructions\n- [ ] User documentation\n\n_Recommended_  \n- [ ] Developer documentation and setup\n- [ ] Examples and tutorials (e.g. Jupyter Notebooks)\n\n_Optional_\n- [ ] Documentation tools ([Sphinx](https://coderefinery.github.io/documentation/sphinx/), [JupyterBook](https://jupyterbook.org/intro.html), [Quarto](https://quarto.org/docs/guide/))\n- [ ] Build an [API reference](https://developer.lsst.io/python/numpydoc.html) from docstrings\n- [ ] Hosting ([GitHub Pages](https://pages.github.com/), [Readthedocs](https://readthedocs.org/))",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "FAIR Software",
       "FAIR assessment cards"
     ]
@@ -103,7 +103,7 @@
     "text": "Software testing\n_Essential_\n- [ ] Installation/execution verification\n\n_Recommended_\n- [ ] [Defensive programming](https://swcarpentry.github.io/python-novice-inflammation/10-defensive.html)\n- [ ] Test your software with [integration tests](https://the-turing-way.netlify.app/reproducible-research/testing/testing-integrationtest.html) and [unit tests](https://the-turing-way.netlify.app/reproducible-research/testing/testing-unittest.html)\n- [ ] Make use of [Continuous Integration](https://coderefinery.github.io/testing/continuous-integration/) to automate testing\n\n_Optional_\n- [ ] Code coverage check (e.g. [Sonarcloud](https://sonarcloud.io/), [codecov](https://about.codecov.io))",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "FAIR Software",
       "FAIR assessment cards"
     ]
@@ -116,7 +116,7 @@
     "text": "Software quality\n_Essential_\n- [ ] [Organize](https://coderefinery.github.io/reproducible-research/organizing-projects/) your project for reproducibility\n- [ ] [Record and manage](https://coderefinery.github.io/reproducible-research/dependencies/) your software dependencies \n\n_Recommended_\n- [ ] Make [refactoring](https://refactoring.guru/refactoring) part of your workflow\n- [ ] Follow [best coding practices](https://alan-turing-institute.github.io/rse-course/html/module07_construction_and_design/index.html)\n\n_Recommended for Python_\n- [ ] Follow [PEP8 guidelines](https://realpython.com/python-pep8/)\n- [ ] Use a tool for dependency management (e.g. [poetry](https://the-turing-way.netlify.app/reproducible-research/renv/renv-package.html))\n- [ ] Use linter (e.g. [pylint](https://pypi.org/project/pylint/), [flake8](https://pypi.org/project/flake8/))\n- [ ] Use a formatter (e.g. [black](https://github.com/psf/black))",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "FAIR Software",
       "FAIR assessment cards"
     ]
@@ -129,7 +129,7 @@
     "text": "Releases\n_Essential_  \n- [ ] Obtain a DOI ([Zenodo](https://zenodo.org/) or [4TU.ResearchData](https://data.4tu.nl/info/about-your-data/getting-started))\n\n_Recommended_  \n- [ ] Use [semantic versioning](https://semver.org/)\n- [ ] Create tagged releases ([GitHub](https://docs.github.com/en/repositories/releasing-projects-on-github))\n- [ ] [CHANGELOG](https://keepachangelog.com/en/1.0.0/)\n- [ ] Upload to [registry](https://github.com/NLeSC/awesome-research-software-registries) (e.g. [PyPI](https://realpython.com/pypi-publish-python-package/), [conda](https://conda.io/projects/conda-build/en/latest/user-guide/tutorials/build-pkgs.html))\n- [ ] [Releasing guide](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository)\n\n_Optional_\n- [ ] [Continuous Integration](https://the-turing-way.netlify.app/reproducible-research/ci/ci-options.html) for automated build and release",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "FAIR Software",
       "FAIR assessment cards"
     ]
@@ -142,7 +142,7 @@
     "text": "Branch management is an important consideration when working collaboratively with Git and GitHub. In Git, branches are a part of your everyday development process. Git branches are effectively a pointer to a snapshot of your changes. When you want to add a new feature or fix a bug — no matter how big or how small — you spawn a new branch to encapsulate your changes.\nBranches are primarily used as a means for teams to develop featurest and give them a separate workspace for their code. Branching allows you to diverge from the main (stable) version of development and continue to do work without affecting that main line[^1].\nA branching strategy, therefore, is the strategy that teams adopt when writing, merging and releasing code when using a version control system. It is essentially a set of rules that developers can follow to stipulate how they interact with a shared codebase.\nFor open source projects, the branching strategy is often described in the Contributing guide of the repository.\nVarious branch management workflows have been developed for different teams and software types[^2]. When developing research software, we recommend using either GitHub Flow or Gitflow[^3].",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "Version control with git",
       "Branch management"
     ]
@@ -155,7 +155,7 @@
     "text": "GitHub flow\nGitHub Flow is a simpler alternative to GitFlow ideal for smaller teams. This strategy relies on three different branches:\n\nMain: main\nDevelop: develop\nFeature: feature/[name-of-feature]\n\nYou start off with the master branch then developers create feature branches that stem directly from the master to isolate their work. When ready, these are then merged back into main and the feature branch is deleted.\n\nExample workflow\nAim: create a new feature\n\nCreate new descriptively-named branches off the master branch for new work, such as feature/add-new-payment-types.\nCommit new work to your local branches and regularly push work to the remote.\nTo request feedback or help, or when you think your work is ready to merge into the master branch, open a pull request.\nAfter your work or feature has been reviewed and approved, it can be merged into the master branch.\nOnce your work has been merged into the master branch, it is available for use.\n\n\n\n\nBenefits of GitHub Flow\n\nSimple design\nWorks well for small teams, especially without (anonymous) external contributors\nSuitable for teams that continuously deploy production code\n\n\n\nChallenges of GitHub Flow\n\nUnable to support multiple versions of code in production at the same time\nThe lack of dedicated development branches makes GitHub Flow more susceptible to bugs in production.",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "Version control with git",
       "Branch management"
     ]
@@ -168,7 +168,7 @@
     "text": "Gitflow\nGitflow is more complicated and advances, but allows for more control over the development cycle. The main idea behind the Git flow branching strategy is to isolate your work into different types of branches. There are six different branch types in total:\n\nMain: main\nDevelop: develop\nFeature: feature/[name-of-feature]\nBug fix: fix/[issue-number]\nHot fix: hotfix/[issue-number] (for a bug in origin/master)\nRelease: release/[version]\n\nThe two primary branches in Gitflow are main and develop and have an infinite timeline. The other branches are temporary supporting branches with different intended purposes: feature, release, bugfix, and hotfix.\n\nIn general, the origin/masterbranch is considered to be the main branch where the source code always reflects a production-ready state, i.e. a stable source code that you would like to share with the community. The origin/develop branch is the main development branch where the source code always reflects a state with the latest delivered development changes for the next release. When the source code in the origin/develop branch reaches a stable point, it needs to be merged into origin/master and tagged with a release number.\nWe would like develop new code in isolation to keep origin/develop clean. To do this, we use feature branches to develop new features for upcoming releases. When starting work on a new feature, branch off from origin/develop and develop the feature in isolation. When the feature is ready, create a pull request to merge the feature back into origin/develop. Once the feature branch is merged, it should be deleted.\n\nBenefits of GitFlow\n\nThe various types of branches make it easy and intuitive to organize your work.\nThe systematic development process allows for efficient testing.\nThe use of release branches allows you to easily and continuously support multiple versions of production code.\nStructured and more secure approach better suited for open source project with contributions from external (anonymous) developers.\n\n\n\nChallenges of GitFlow\n\nDepending on the complexity of the product, the Git flow model could overcomplicate and slow the development process and release cycle.\nBecause of the long development cycle, Git flow is historically not able to support Continuous Delivery or Continuous Integration.\n\n\n\nWorkflow examples\nAim: implement new features into the code.\n\nGeneral development of the code takes place on origin/develop. When you want to fix a bug or work on a new feature, first create an issue where you announce what you will be working on.\nWhen you want to work on a new feature or fix a bug, create a new feature branch from the development branch.\nWork on the code in the feature branch.\nCreate a merge request on GitLab to merge the feature branch into the development branch when ready. A good practice is to invite another developer to review your feature.\nRepeat previous steps to implement more features. Best practice is to keep the merge requests small; this makes it easy to review and limits the possibilty of generating conflicts.\n\nAim: create a new release on origin/master.\n\nWhen ready to make a new release, create a release branch from the development branch.\nOn the release branch: compile and package the software, update documentation, update version, dotting i’s, …\nCreate a merge request to merge the release branch with the main branch and back into the development branch.\nDelete release branch after merge.\nCreate a new release in the master branch.",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "Version control with git",
       "Branch management"
     ]
@@ -181,7 +181,7 @@
     "text": "The goal of the FAIR principles is to improve research transparency, reproducibility and reusability. To achieve this, your research needs to be described through metadata, should be open for inspection, well-documented, and well structured. This ensures that it can be replicated, expanded upon, merged, reinterpreted, or reimplemented. The acronym FAIR stands for:\n\nFindable: Your research software can be easily found (i.e. has rich metadata, unique identifiers).\nAccessible: Once found, it can be accessed, ideally through well-defined and open protocols.\nInteroperable: Your research is compatible with other datasets, tools, and workflows, allowing for integration and reuse across various applications and fields.\nReusable: The ultimate goal is that your research outputs can be reused in different contexts. This requires comprehensive documentation, clear licensing, and a modular structure.\n\nWhile originally targetting data management, the FAIR for Research Software (FAIR4RS) extends these principles to research software, which, unlike data, is executable and evolves over time. Ensuring the findability of software involves metadata, identifiers, and version control systems, while accessibility includes guidelines for obtaining, installing, and running the software. Interoperability involves adherence to community-driven standards or protocols, and reusability requires detailed documentation and user guides to effectively apply the software in new research projects.\n\n\n\n\n\n\nFurther reading\n\n\n\n\nFAIR Guiding Principles for scientific data management and stewardship to research software\nFAIR4RS community in Zenodo\nFAIR Software Checklist - five recommendations for FAIR (scientific) software",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "FAIR Software"
     ]
   },
@@ -193,7 +193,7 @@
     "text": "Important\n\n\n\nFor questions about data and software licenses, please consult your Faculty Data Steward.",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "Documentation",
       "Software license"
     ]
@@ -206,7 +206,7 @@
     "text": "TU Delft licensing policy\nTU Delft, by default, holds the rights to the software created by its employees. In order to apply a pre-approved open source license, you have to follow the guidelines in TU Delft Guidelines on Research Software: Licensing, Registration and Commercialisation. It states:\n\nIt is important to remember that in principle TU Delft holds the rights to the software created by its employees (i.e. software developers, researchers and/or staff). So, some formal (legal) steps are needed to arrange matters properly.\n\n\nWhen these guidelines are followed and when the software is published, TU Delft disclaims its copyright, allowing software developers, researchers and staff to hold the copyright to their software and thereby having the right to apply one of the pre-approved licences when sharing software. The pre-approved open source software licences at TU Delft are Apache, MIT, BSD, EUPL, AGPL, LGPL, GPL, and CC0.\n\n\nSteps to apply a pre-approved open-source license\n\nDetermine if it is possible to apply an Open Source Software licence to your project (see diagram below).\nThe waiver of TU Delft should be indicated in the software licence with the following text:\n\nTechnische Universiteit Delft hereby disclaims all copyright interest in the program “Name program” (one line description of the content or function) written by the Author(s). \n\n[Name Dean], Dean of [Name Faculty]\n\nAssert your own, personal copyright (© YEAR, [NAME], [REFERENCE project, grant or study if desired]. The reason for waiving the copyright and having the software developers, researchers and staff file the copyright in their own name facilitates the use of copyleft licences.\nApply one of the TU Delft pre-approved Open Source Software licences in the format and form described in the licence text after stating, “This work is licensed under a [NAME and VERSION] OSS licence”.\nMake the software openly available (for instance in an online repository such as GitHub).\nPlease consider acknowledging support from TU Delft and/or your funding provider.\nRegister the software either in 4TU.ResearchData or in PURE. Registries in 4TU.ResearchData are automatically registered in PURE.\n\n\n\n\n\n\n\nImportant\n\n\n\nThe steps above are mandatory, the TU Delft guidelines state:\n\nPlease note that if the software is not published, and/or if the guidelines have not been followed correctly and/or if the software is not registered in PURE, then this ‘agreement’ is invalid and the software automatically falls under the legal copyright of TU Delft. This instantly nullifies the right of the software developer or researcher to apply for a licence and thus the open source software licence applied never came into existence. This works retroactively.\n\n\n\n\n\nDecision tree for applying for a license\nTU Delft staff members can apply for an open-source license according to the decision tree found in TU Delft Guidelines on Research Software: Licensing, Registration and Commercialisation.\n\n\n\n\n\n\n\nDecision tree to guide software developers, researchers and staff on when they can apply an open source licence to their software (OSS: Open Source Software, IDF: Invention Disclosure Form). From: Bazuine, M. (2021). TU Delft Guidelines on Research Software: Licensing, Registration and Commercialisation. Zenodo. https://doi.org/10.5281/zenodo.4629635",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "Documentation",
       "Software license"
     ]
@@ -219,7 +219,7 @@
     "text": "Types of open source licenses\n\nPermissive licenses aka copyright (e.g., MIT, BSD, Apache): These licenses allow users to do almost anything with the code, including using it in proprietary software.\nRestrictive licenses aka copyleft (e.g., GPL, AGPL, LGPL, EUPL): These licenses require any derivative works to be open source and distributed under the same license.\n\n\nCopyright licenses\n\nMIT: Very simple and permissive, allowing almost unrestricted reuse. The software can be freely used, modified, distributed, and sublicensed.\nBSD: Similar to the MIT license, but it may include additional attribution requirements.\n\n\n\n\n\n\n\nBSD license details\n\n\n\n\n\n\nAttribution: Requires that the copyright notice and list of conditions be included in all copies or substantial portions of the software (except for the BSD 0-Clause License, which does not require any attribution). There are different clause variants of the license. For example, a BSD 3-Clause license adds a clause preventing the use of the names of the project or its contributors to endorse or promote derived products without written permission.\nPatent Protection: Does not include explicit provisions for patent protection.\n\n\n\n\n\nApache: Allows for the use, modification, distribution, and sublicensing of the software under certain conditions. It is often used in open-source projects and is often the choice for its balance between permissiveness and the protection of patents. The Innovation and Impact Center recommends this license for industry collaborations.\n\n\n\n\n\n\n\nApache license details\n\n\n\n\n\n\nAttribution: Requires preservation of the original copyright notice and a notice of any modifications made.\nPatent Protection: Includes a patent retaliation clause, which provides an additional layer of protection. This clause terminates the license if the user initiates patent litigation against any entity regarding the licensed software.\nNotice Requirement: Modifications to the original code must be documented, and a NOTICE file must be included with any substantial portions of the software.\n\n\n\n\n\n\n\n\n\n\nKey differences between a BSD and Apache license\n\n\n\n\nThe Apache license includes a patent retaliation clause to protect against patent litigation, but the BSD license does not explicitly address patent rights.\nThe BSD license does not require a specific notice file for modifications, but the Apache License requires a NOTICE file that documents any modifications made to the original code.\n\n\n\n\n\nCopyleft licenses\n\nGPL (GNU General Public License): One of the most widespread copyleft licenses. With the GPL license, any derivative work under this license automatically becomes subject to the same GPL terms, regardless of the size of the contribution. All future modifications and adaptions of code under this license is only compatible with this license and cannot be used in proprietary software.\nDerivatives from GPL (AGPL, LGPL, EUPL): From these, the EUPL license is somewhat more flexible compared to others as it can coexist with other open-source software licenses such as MIT, BSD, and Apache. For instance, if you integrate a portion of software that is licensed under Apache into a project governed by EUPL, that portion can retain its Apache license. In contrast, under the GPL, the entire codebase would need to be licensed under GPL.\n\n\n\n\n\n\n\nNote\n\n\n\nThere are even instances when GPL licenses are incompatible with each other. For example, GPL-2.0 is incompatible with GPL-3.0. If a project uses GPL-2.0 you are essentially forced to use that license.\n\n\n\n\nLicense compatibility\n\n\n\n\n\n\n\nCompatibility of licenses. From: Bazuine, M. (2021). TU Delft Guidelines on Research Software: Licensing, Registration and Commercialisation. Zenodo. https://doi.org/10.5281/zenodo.4629635\n\n\n\n\n\n\n\n\nTip\n\n\n\nDon’t forget to check whether your software’s dependencies have restrictions on re-use.\n\n\nIt is advisable to contact your faculty’s data steward regarding licensing questions. If your project involves complex legal considerations, particularly regarding intellectual property rights or compliance with licensing agreements, the Innovation and Impact Center should also be involved.\n\n\n\n\n\n\nFurther reading\n\n\n\n\nTU Delft Research Software Policy\nTU Delft Guidelines on Research Software - the TU Delft Research Software Policy approved by the Executive Board\nChoose a license - a simplified guide on choosing an open-source license\ntl;drLegal - Plain English summaries of software licenses\nThe Turing Way - Licensing",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "Documentation",
       "Software license"
     ]
@@ -232,7 +232,7 @@
     "text": "It’s straightforward to cite research papers, but with software sometimes it’s not as obvious. It is recommended to place a CITATION.cff file in the root of your repository to inform others about the preferred way to cite the software. GitHub can automatically parse the .cff file to create citation snippets in APA or BibTeX format. If you’d prefer the software to be cited through a journal publication, you can mention this in the README and in the CITATION.cff file.\n\n\n\n\n\n\nAn example of a CITATION.cff\n\n\n\n\n\ncff-version: 1.2.0\nmessage: \"If you are using this software, please cite it as shown below.\"\nauthors:\n- family-names: \"Doe\"\n  given-names: \"Jane\"\n  orcid: \"https://orcid.org/9999-9999-9999-9999\"\ntitle: \"Name of your software\"\nversion: 1.0.1\ndoi: \"11.1111/11111\"\ndate-released: 2024-12-31\nlicense: MIT\nurl: \"https://github.com/your_repo\"\n\n\n\nWhen citing a paper that is linked to the software you can use preferred-citation argument.\n\n\n\n\n\n\nAn example of a CITATION file citing a research article\n\n\n\n\n\ncff-version: 1.2.0\nmessage: \"If you are using this software, please cite it as shown below.\"\nauthors:\n- family-names: \"Doe\"\n  given-names: \"Jane\"\n  orcid: \"https://orcid.org/9999-9999-9999-9999\"\ntitle: \"Name of your software\"\nversion: 1.0.1\ndoi: \"11.1111/11111\"\ndate-released: 2024-12-31\nlicense: MIT\nurl: \"https://github.com/your_repo\"\npreferred-citation:\n    type: article\n    authors:\n    - family-names: \"Doe\"\n      given-names: \"Jane\"\n      orcid: \"https://orcid.org/9999-9999-9999-9999\"\n    doi: \"11.1111/11111\"\n    journal: \"The title of the journal\"\n    month: 12\n    start: 19 # the first page number\n    end: 29 #the last page number\n    title: \"Name of your submitted paper\"\n    issue: 9\n    volume: 2\n    year: 2024\n    \n\n\n\n\n\n\n\n\n\nHow the citation would look on GitHub\n\n\n\n\n\nOn GitHub, it will show in either APA or BibTeX formatting, as they are the currently supported formats. If you add a CITATION.cff file to your repository, then a label for citing will automatically be generated and will show up on the right sidebar of the repository.\nAPA\n\nDoe, J. (2024). Name of your software (Version 1.0.1) [Computer software]. https://doi.org/11.1111/11111\n\nBibTeX\n\n@software{Joe_Name_of_your_software_2024, author = {Doe, Jane}, doi = {11.1111/11111}, month = {12}, title = {{Name of your software}}, url = {https://github.com/your_repo}, version = {1.0.1}, year = {2024} }\n\nThis is an example of software citation.\n\n\n\n\n\n\n\n\n\nFurther reading\n\n\n\n\nCITATION.cff documentation\nGitHub documentation on CITATION files - this resource also includes how to cite something other than software or a journal article.\nGenerate CITATION.cff files\nCitation File Format GitHub",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "Documentation",
       "CITATION.cff"
     ]
@@ -245,7 +245,7 @@
     "text": "Docker is an open platform for developing, shipping, and running applications. Docker provides the ability to package and run an application in a loosely isolated environment called a container. Containers are lightweight and contain everything needed to run the application, so you do not need to rely on what is currently installed on the host system. You can easily share containers while you work, and be sure that everyone you share with gets the same container that works in the same way.\nDockerfile – is a text document that contains all the commands you would normally execute manually in order to build a Docker image. The instructions include a choice of operating system and all the libraries we need to install into it. Docker can build images automatically by reading the instructions from a Dockerfile.\nDocker Images – are the basis of containers. A Docker image is an immutable (unchangeable) file that contains the source code, libraries, dependencies, tools, and other files needed for an application to run.\nDocker Container – A container is, ultimately, just a running image.",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "Working with containers",
       "Using a docker container with a GUI"
     ]
@@ -258,7 +258,7 @@
     "text": "Docker installation\nDocker can be installed on Windows, macOS, and Linux. Please visit the Docker website for downloading and installation instructions. Note, you will need admin access to your system.\nPlease check the Issues/troubleshooting session at the end of this page if you encounter some problems during installation. If your problem is not listed you can add it as an issue in the main repository.\n\nVerify Docker installation\nRun the following commands in the terminal (see below) to verify your installation:\n\ndocker --version\nWill output the version number\ndocker run hello-world\nWill output a welcome message. If you haven’t run this command before, you will receive the message Unable to find image: ‘hello-world:latest’ locally. Docker will then proceed by downloading and running the latest version from DockerHub.",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "Working with containers",
       "Using a docker container with a GUI"
     ]
@@ -271,7 +271,7 @@
     "text": "Terminal access\nLinux\nThe default Unix Shell for Linux operating systems is usually Bash. On most versions of Linux, it is accessible by running the (Gnome) Terminal or (KDE) Konsole or xterm, which can be found via the applications menu or the search bar. If your machine is set up to use something other than bash, you can run it by opening a terminal and typing bash.\nmacOS\nFor a Mac computer, the default Unix Shell is Bash, and it is available via the Terminal Utilities program within your Applications folder. To open Terminal, try one or both of the following:\n\nGo to your Applications. Within Applications, open the Utilities folder. Locate Terminal in the Utilities folder and open it.\nUse the Mac ‘Spotlight’ computer search function. Search for: Terminal and press Return.\n\nFor more info: How To use a terminal on Mac\nWindows\nComputers with Windows operating systems do not automatically have a Unix Shell program installed. We encourage you to use an emulator included in Git for Windows, which gives you access to both Bash shell commands and Git. To install, please follow these instructions.",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "Working with containers",
       "Using a docker container with a GUI"
     ]
@@ -284,7 +284,7 @@
     "text": "X Windows System\nDocker doesn’t have any build-in graphics, which means it cannot run desktop applications by default. For this, we require the X Windows System. The X Window System (X11, or simply X) is a windowing system for bitmap displays, common on Unix-like operating systems. X provides the basic framework for a GUI environment: drawing and moving windows on the display device and interacting with a mouse and a keyboard.\nIf you are on a desktop Linux, you already have one. For macOS, you can download XQuartz, and for Windows, we tested VcXsrv.\nDesktop applications will run in Docker and will try to communicate with the X server you’re running on your PC. They don’t need to know anything but the location of the X server and an optional display that they target. This is denoted by an environmental variable named DISPLAY, with the following syntax: DISPLAY=xserver-host:0. The number you see after the : is the display number; for the intents and purpose of this article, we will consider this to be equivalent to 0 is the primary display attached to the X server.\nIn order to set up the environment variable, we need to add the following code to the docker run command in the terminal:\n\nWindowsmacOSLinux\n\n\n-e DISPLAY=host.docker.internal:0\n\n\n-e DISPLAY=docker.for.mac.host.internal:0\n\n\n--net=host -e DISPLAY=:0\n\n\n\nWith these commands (and an active X server on the host system), any graphical output inside the container will be shown on your own desktop.",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "Working with containers",
       "Using a docker container with a GUI"
     ]
@@ -297,7 +297,7 @@
     "text": "Mount a volume\nThe docker image with which you can spawn a container contains all the software and general datafiles. However, we still need to give the container access to your dataset. To do so, we can mount a directory on your own system inside the container with the following command structure: -v &lt;abs_path_host&gt;:&lt;abs_path_container&gt;. Assuming your terminal is opened inside the data folder on your system, the specific commands for the different operating systems mount this folder as the /data folder inside the container, are:\nFor Windows in GitBash: -v /$(pwd):/data\nFor Windows in cmd: -v %cd%:/data\nFor Linux and macOS: -v $(pwd):/data\n$(pwd) can be replaced with the absolute path of the datafolder, or be used to access subdirectories (e.g. $(pwd)/data:/data).\nFor more info about mounting volumes, check this StackOverflow question",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "Working with containers",
       "Using a docker container with a GUI"
     ]
@@ -310,7 +310,7 @@
     "text": "Running a container with data and graphical output\nTo start a container from an image, we use the command docker run &lt;image_name&gt;. We also pass the additional flags --rm to delete the container after closing and -it to be able to interact with the container. Combining all arguments then leads to the following commands to run (and automatically close) the container:\n\nWindowsmacOSLinux\n\n\ndocker run --rm -it -e DISPLAY=host.docker.internal:0 -v /$(pwd):/data &lt;image_name&gt;:&lt;image_version&gt;\n\n\ndocker run --rm -it -e DISPLAY=docker.for.mac.host.internal:0 -v $(pwd):/data &lt;image_name&gt;:&lt;image_version&gt;\n\n\ndocker run --rm -it --net=host -e DISPLAY=:0 -v $(pwd):/data &lt;image_name&gt;:&lt;image_version&gt;",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "Working with containers",
       "Using a docker container with a GUI"
     ]
@@ -323,7 +323,7 @@
     "text": "Issues/Troubleshooting\n\nFor Linux users encountering the error Unable to init server, please run xhost + in the terminal and rerun the docker run command. For more info, see here.\nWSL 2 installation incomplete for Windows users\n\nEnable the virtualization in the BIOS\nFollow ALL the steps described in: https://docs.microsoft.com/en-us/windows/wsl/install-manual\n\nFailing to port a display in the docker container for Mac users.\n\nSolution: Change the docker run command by this one , docker run --rm -it -e DISPLAY=IPADDRESS:0 -v $(pwd):/data &lt;image_name&gt;:&lt;image_version&gt;\nThe IPADDRESS is gotten from typing ifconfig in the terminal.\n\nFailing to run the pipeline once the GUI is open\n\nCheck that all documents are closed before run it , namely the Getting started and the adapter files documents.\n\nFailing to mount an external hard drive in Windows when running a docker container\n\nError:\n\n      libGL error: No matching fbConfigs or visuals found\n      libGL error: failed to load driver: swrast\n\nSolution (noy yet found):\n\nLook into this links:\n\nhttps://stackoverflow.com/questions/46586013/glxgears-not-working-inside-of-docker",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "Working with containers",
       "Using a docker container with a GUI"
     ]
@@ -1775,7 +1775,7 @@
     "text": "This checklist provides a set of recommendations for FAIR software. It outlines best practices and guidelines to ensure the quality, reproducibility, and sustainability of software projects. The checklist covers various aspects, such as version control, documentation, testing, licensing, and collaboration, providing a comprehensive framework for improving your software development process.",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "FAIR Software",
       "FAIR checklist for research software"
     ]
@@ -1788,7 +1788,7 @@
     "text": "Checklist\n\n\n\n\n\n\nVersion control\n\n\n\nEssential\n\nUse git as a version control system\nUpload your project on GitHub or TU Delft GitLab\n\nRecommended\n\nMake your repository public\nConsider your branch hygiene\nUse a branching model (e.g. GitFlow)\nUse meaningful commit messages\n\n\n\n\n\n\n\n\n\nCollaboration\n\n\n\nEssential\n\nMake use of GitHub issues\n\nRecommended\n\nContribution guidelines\nCode of conduct\n\n\n\n\n\n\n\n\n\nProject documentation\n\n\n\nEssential\n\nREADME\nApply a TU Delft pre-approved LICENSE\nCITATION\n\n\n\n\n\n\n\n\n\nSoftware documentation\n\n\n\nEssential\n\nSource code documentation (docstrings)\nDocument your project dependencies\nInstallation instructions\nUser documentation\n\nRecommended\n\nDeveloper documentation and setup\nExamples and tutorials (e.g. Jupyter Notebooks)\n\nOptional\n\nDocumentation tools (Sphinx, JupyterBook, Quarto)\nBuild an API reference from docstrings\nHosting (GitHub Pages, Readthedocs)\n\n\n\n\n\n\n\n\n\nSoftware testing\n\n\n\nEssential\n\nInstallation/execution verification\n\nRecommended\n\nDefensive programming\nTest your software with integration tests and unit tests\nMake use of Continuous Integration to automate testing\n\nOptional\n\nCode coverage check (e.g. Sonarcloud, codecov)\n\n\n\n\n\n\n\n\n\nSoftware quality\n\n\n\nEssential\n\nOrganize your project for reproducibility\nRecord and manage your software dependencies\n\nRecommended\n\nMake refactoring part of your workflow\nFollow best coding practices\n\nRecommended for Python\n\nFollow PEP8 guidelines\nUse a tool for dependency management (e.g. poetry)\nUse linter (e.g. pylint, flake8)\nUse a formatter (e.g. black)\n\n\n\n\n\n\n\n\n\nReleases\n\n\n\nEssential\n\nObtain a DOI (Zenodo or 4TU.ResearchData)\n\nRecommended\n\nUse semantic versioning\nCreate tagged releases (GitHub)\nCHANGELOG\nUpload to registry (e.g. PyPI, conda)\nReleasing guide\n\nOptional\n\nContinuous Integration for automated build and release",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "FAIR Software",
       "FAIR checklist for research software"
     ]
@@ -1801,7 +1801,7 @@
     "text": "Example repositories\n\neScience Center - matchms - Matchms is an open-source Python package to import, process, clean, and compare mass spectrometry data.\nTU Delft - Transposonmapper - Transposonmapper is an open-source python package and Docker image for mapping transposons from sequencing data.\n\n\nFor more information on the principles behind FAIR software, please have a look at the following resources:\n\nThe Turing Way - Guide for Reproducible Research - general guide to reproducible research\nTowards FAIR principles for research software - publication on the translation of FAIR principles for data to FAIR principles for software\nFrom FAIR research data toward FAIR and open research software\nFAIR Principles for Research Software",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "FAIR Software",
       "FAIR checklist for research software"
     ]
@@ -1814,7 +1814,7 @@
     "text": "Acknowledgements\nThe checklist was in part based on the checklist provided by the eScience Center, licensed under CC BY 4.0.",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "FAIR Software",
       "FAIR checklist for research software"
     ]
@@ -1827,7 +1827,7 @@
     "text": "Just as you document your software dependencies, it may be useful to record and manage your development environments. This may involve documenting the specific configurations, tools, and versions used during development to ensure that everything runs consistently across different setups.\nBy recording your environments, you create a reproducible framework that significantly reduces the infamous “it works on my machine” syndrome, where code runs on one machine but fails on others.\nEnvironment management includes specifying your operating system, programming language (and their versions), system libraries, and any other software or tools required. This practice not only helps in maintaining consistency across development, testing, and production stages but also streamlines onboarding for new team members, as they can quickly set up their environment to match the recorded specifications.",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "Working with containers"
     ]
   },
@@ -1839,7 +1839,7 @@
     "text": "Just as you document your software dependencies, it may be useful to record and manage your development environments. This may involve documenting the specific configurations, tools, and versions used during development to ensure that everything runs consistently across different setups.\nBy recording your environments, you create a reproducible framework that significantly reduces the infamous “it works on my machine” syndrome, where code runs on one machine but fails on others.\nEnvironment management includes specifying your operating system, programming language (and their versions), system libraries, and any other software or tools required. This practice not only helps in maintaining consistency across development, testing, and production stages but also streamlines onboarding for new team members, as they can quickly set up their environment to match the recorded specifications.",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "Working with containers"
     ]
   },
@@ -1851,7 +1851,7 @@
     "text": "Why use containers?\nContainers remove the need for manual installation or troubleshooting, ensuring that software runs consistently across different machines. Containers act as a self-contained unit that bundle everything needed to run software, including dependencies and system libraries, into a single package known as an image.\nThe definition files, like Dockerfiles or Singularity definition files, are essentially instruction manuals to build a container image.\n\n\n\n\n\n\nAn analogy for a container image\n\n\n\n\n\nConsider a container image like a detailed movie script that outlines every scene. When the movie is shot (i.e., the container is executed), a temporary set is built where all filming occurs in a controlled environment. Once filming ends, the set is dismantled, but the script remains unchanged, allowing the software to be re-executed with the same consistent results every time, just as each scene is reproduced faithfully with the same script.\n\n\n\nContainers can be useful for various purposes:\n\nIf installing certain software is complex or incompatible with your operating system, you can use a pre-built container image to run the software seamlessly.\nLikewise, if you want to make sure that the people you are working with use the exact same environment, you could provide them with an image of your container.\nIf you are facing issues due to different system architectures you can distribute a definition file to build an image that tailors to different machines. While it might not replicate your environment exactly, it often provides a sufficiently close alternative.\n\nPopular containerisation solutions:\n\nDocker and Podman are great for general software development.\nSingularity is tailored for high-performance computing (HPC) environments.\nFor managing and scaling containers across multiple machines, tools like Kubernetes are commonly used.\n\nDocker’s official samples and examples\n\n\n\n\n\n\nFurther reading\n\n\n\n\nRecording environments lesson on CodeRefinery\nCarpentries incubator lesson on Docker\nGuides and manuals for Docker\nSingularity documentation",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "Working with containers"
     ]
   },
@@ -1863,7 +1863,7 @@
     "text": "Advantages and disadvantages of using containers\nContainers have gained widespread popularity due to their significant benefits in solving various challenges:\n\nThey enable a smooth transition of workflows across different operating systems and configurations.\nThey address the common issue of software behaving differently on different machines by providing a consistent runtime environment.\nFor software with nested dependencies, containers can be a vital tool for ensuring long-term reproducibility.\nContainers package software in isolated files, simplifying management, installation, and removal compared to traditional methods.\n\nBut it is important to consider the downsides:\n\nThe convenience of containers might lead to overlooking underlying software installation issues and not adhering to good software development practices.\nThere’s a risk of creating a new form of dependency - software that “only works in a specific container”, which could limit flexibility and interoperability.\nContainer images can grow in size substantially, especially if not carefully managed.\nModifying existing containers can sometimes be challenging, requiring a good understanding of the container’s configuration.\nEnsuring container security is vital, as misconfigurations can expose vulnerabilities.\n\n\n\n\n\n\n\nCaution\n\n\n\nIt’s crucial to source your container images from reputable and official channels. There have been instances where images were found to be malicious, so it is very important to apply the same caution as when installing software packages from untrusted sources.\nAlways download images from trusted sources like Docker Hub. Utilize container scanning tools, such as Docker scanning tools to mitigate risks from malicious images.",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "Working with containers"
     ]
   },
@@ -1875,7 +1875,7 @@
     "text": "Documentation serves as a bridge between the developer and user, and effectively communicating and explaining the code is as important as the code itself. Often, two types of documentation are distinguished: User and developer documentation. Both are essential for the success of a software project, and they serve different purposes.\n\nUser documentation\nUser documentation is aimed at those who will use the software, focusing on how to effectively utilize it. This documentation typically includes user manuals and tutorials, possibly FAQs and troubleshooting guides. The emphasis is on simplicity and accessibility, ensuring that anyone can understand how to use the software.\n\n\nDeveloper documentation\nDeveloper documentation targets developers who need to understand the internal parts of the software for purposes of development, maintenance, or integration. It can include additional details such as Application Programming Interface (API) documentation and development guidelines. Developer documentation is more detailed providing insights necessary for modifying and enhancing the software.\n\n\n\n\n\n\nChecklist\n\n\n\n\n\nUser documentation\n\nREADME\nCITATION\nLICENSE\n\nDeveloper documentation\n\nCode comments\nContributing guidelines\nAPI documentation\nOptional: Code of conduct",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "Documentation"
     ]
   },
@@ -1887,7 +1887,7 @@
     "text": "Although the specific content of a README can vary from project to project, several sections are recommended because they address fundamental aspects that are relevant to most projects.\nYou should ensure that your README addresses the following:",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "Documentation",
       "README"
     ]
@@ -1900,7 +1900,7 @@
     "text": "Description\nAlthough explaining the purpose might sound self-explanatory, it is important to clearly explain the motivations and objectives of your project. This section should serve as an introductory overview that informs potential users and contributors about the essence of your project.\nProvide background information and include links to any references that someone might not be familiar with. If there are alternatives to your project, this is the place to outline what sets your project apart.",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "Documentation",
       "README"
     ]
@@ -1913,7 +1913,7 @@
     "text": "Installation and usage\nThis section should detail the steps needed to set up the software in their environment.\nBefore installation, users must be aware of any prerequisites or dependencies required. This can include specific versions of programming languages, libraries, operating systems, and hardware. It is recommended to make use of a dependency manager such as pip or conda for easy and reproducible installation.\nAfter listing the dependencies, describe the installation process step-by-step. This might involve downloading the software from a repository, compiling code, or using a package manager.\nExample: The scikit-learn GitHub repository provides a good example of the Installation section of a README.\nYou can include the simplest possible usage example directly in the README and provide more complex examples in additional files or links.\nExample: The TensorFlow GitHub repository gives a small usage sample after installation instructions and provides a link with additional examples and tutorials.\nIt is recommended to write READMEs in markdown formatting and they should be placed in the top-level directory of your project. It is better that your README is on the side of too much information than too little. If you find your README is becoming too extensive, think about incorporating additional forms of documentation instead of omitting important details.\n\n\n\n\n\n\nFurther reading\n\n\n\n\nMake a README - README 101\nMaking READMEs readable",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "Documentation",
       "README"
     ]
@@ -1926,7 +1926,7 @@
     "text": "🏗️ Under construction",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "Getting started"
     ]
   },
@@ -1938,7 +1938,7 @@
     "text": "Using a version control system provides better management to your code. It allows tracing back changes made, facilitates collaboration and dissemination of the code files. As using a version control system is becoming standard, some scientific journals (e.g. Science and Nature) require code used for modelling or data analysis to be available in a publicly accessible repository. Git is the most popular and commonly used version control software.\nFollowing are the different ways in which you can learn version control with Git:\n\nSign up for the software carpentry workshop (free of cost) at TU Delft.\nLearn at your own pace using the publicly available training material from the Software Carpentry and Code Refinery\nUse the Repository Template to make your code more compliant with FAIR principles",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "Version control with git"
     ]
   },
@@ -1950,7 +1950,7 @@
     "text": "Research software plays a crucial role in academic research and has become a key output of many research projects. A software management plan helps to implement best practices during software development and ensures that software is accessible and reusable in the short and longer term. It also contributes to the reproducibility of results and stimulates collaborative work on open-source software for research.\nThe Netherlands eScience Center and NWO, the Dutch Research Council, have taken the initiative to form a working group to develop (national) guidelines for software management plans. This working group – composed of five experts in research software, representing different research organizations in the Netherlands, and roles within those organizations – started their work in December 2021.\nThe initiative resulted in the publication of the Practical guide to Software Management Plans in October 2022. You can read more about the process leading up to the guide in this blog. The DCC is currently evaluating the adoption of these guidelines for TU Delft research software.\nThe Intermediate Research Software Development course from The Carpentries is a good resource to learn the core principle of intermediate-level software development and best practices collaborating in a team.",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "FAIR Software",
       "Software management plan"
     ]
@@ -1963,7 +1963,7 @@
     "text": "Further reading\n\nSoftware Development Plan: A quick start on building software development plans.\nHow to Learn Software Design and Architecture: A step-by-step guide to learn software design and architecture, and best practices.\nFundamentals of Software Architecture: A comprehensive textbook to guide software developers on software architecture, available online.\nSoftware Development Life Cycle: A guide on how to follow the software development lifecycle (SDLC) systematically, and different SDLC methodologies.\nSoftware Architecture - Design and Evaluation: A detailed research report about software architecture design and evaluation.\n\n\nSoftware management\n\nSoftware Management Overview: An overview of software management and main tasks involved with managing a software.\nSoftware Management Plans: A detailed documentation about software management plans, including up-to-date templates.\nWriting Software Management Plans: A guide from the Software Sustainability Institute on how to write research software management plans.\n\n\n\nResearch software sustainability\n\nA Framework for Understanding Research Software: A proposal for categorizing different types of research software, and a framework for sustaining research software.\n\n\n\nDeveloping open source software\n\nProducing Open Source Software: A comprehensive textbook for software managers and developers on how to start running open source projects and maintain them.\n\n\n\nSoftware Architecture diagrams\nC4 model is a popular approach to draw good software architecture diagram that software development teams use to communicate efficiently. It is easy to learn and adopt into existing projects as well as design new projects from scratch. It provides a set of hierarchical abstractions and diagrams to visualize software architecture in a notation independent manner.\nWhile a marker and a whiteboard is more than enough to get started with the C4 model, the C4-PlantUML library provides an easy-to-understand language to create C4 diagrams with PlantUML. The library is handy with macros, snippets and a VSCode extension.\n\nC4 model\nC4 model video explanation\nC4 model in practice",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "FAIR Software",
       "Software management plan"
     ]
@@ -1976,7 +1976,7 @@
     "text": "In this guide, we will discuss writing and running tests with MATLAB. See the documentation from Matlab for more information.",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "Software testing",
       "Testing with MATLAB"
     ]
@@ -1989,7 +1989,7 @@
     "text": "Writing tests\nTests should be kept separate from the code base, usually in a folder tests/. The naming convention for writing a test for a particular MATLAB script is to prefix “test_” to the name of the script that is being tested. For example, a test for the file draw_random_number.m should be called test_draw_random_number.m. In general, Matlab will recognize any scripts that are prefixed or suffixed with the string “test” as tests.\nYou can find an example below with the matlab syntax for writing Class-based unit tests:\n\n\n\n\n\n\nClick to view\n\n\n\n\n\n% Test classes are created by inheriting (&lt; symbol) the  Matlab Testing \n% framework.\n%\n% e.g. classdef nameOfTest &lt; matlab.unittest.TestCase\n%      end\n\nclassdef (TestTags = {'Unit'}) test_example &lt; matlab.unittest.TestCase \n%                              It's convention to name the test file \n%                              test_\"filename being tested\".m\n%\n%         TestTags are an optional feature that are useful for identifying \n%         what kind of test you're coding, as you might only want to run \n%         certain tests that are related.\n\n    properties \n        % Class properties are not required, but are useful to contain \n        % common parameters between tests.\n    end\n    \n    methods (TestClassSetup) \n        % TestClassSetup methods are not required, but are usually used to\n        % setup common testing variables, or loading data. These methods\n        % are executed *prior to* the (Test) methods.\n    end\n    \n    methods (TestClassTeardown) \n        % TestClassTeardown methods are not required, but are useful to\n        % delete any files created during the test execution. These methods\n        % are executed *after* the (Test) methods.\n    end\n    \n    methods (Test) % Each test is it's own method function, and takes \n                   % testCase as their only argument.\n\n        function test_sumNumbers_returns_expected_value_for_integer_case(testCase) \n        % Use very descriptive test method names - this helps for debugging\n        % when error occurs.\n                        \n            % Call the function you'd like to test, e.g:\n%             actualValue = sumNumbers(2,2); % Test example integer case, 2+2\n            % Since the function sumNumbers is not defined, the test will\n            % fail. Instead, we will define the actual value.\n            actualValue = 4;\n\n\n            expectedValue = 4; % We know that we expect that 2+2 = 4\n\n            testCase.assertEqual(expectedValue, actualValue)\n            % Assert functions are the core of unit tests; if it fails,\n            % test log will return failed tests and details.\n            %\n            % They are called as methods of the testCase object.\n            %\n            % Example assert methods:\n            %\n            % assertEqual(expected, actual): Passes if the two input values\n            %                                are equal.\n            % assertTrue(boolValue): Passes if the value or statement is \n            %                        true (e.g. 2&gt;1)\n            % assertFalse(boolValue): Passes if the value or statement is\n            %                         false (e.g. 1==0)\n            %\n            % See Matlab's documentation for more assert methods: \n            % https://www.mathworks.com/help/matlab/ref/matlab.unittest.qualifications.assertable-class.html\n        end\n    end\n\nend",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "Software testing",
       "Testing with MATLAB"
     ]
@@ -2002,7 +2002,7 @@
     "text": "Executing tests\nWe will create a Matlab script called run_testsuite.m in the folder tests/. This function can run the tests present in the folder tests/ and can create test reports.\n\n\n\n\n\n\nClick to view\n\n\n\n\n\nfunction result = run_testsuite(varargin)\n%RUNTESTS - Run all tests and produce coverage report\n%\n% Requires Matlab version &gt;= R2017a\n%\n% This script is designed to be placed with the folder tests/ following\n% the folder organization as seen below:\n%\n% - root/\n%   | - src/\n%   |   | - function_1.m\n%   |   \\ - function_2.m\n%   |\n%   \\ - tests/\n%       | - reports/    % Folder will be generated during testing\n%       | - run_testsuite.m\n%       | - test_function_1.m\n%       \\ - test_function_2.m\n% \n% Resources:\n% https://nl.mathworks.com/help/matlab/ref/matlab.unittest.plugins.codecoverageplugin-class.html\n%\n% \n% Parameters\n% ----------\n% srcFolderName : char, optional\n%   Name of the source code directory. Defaults to 'pvmd'.\n% TestTag : char, optional\n%   Only tests with this tag will be run. Defaults to running all tests,\n% ExcludedFiles : cell, optional\n%   List of filenames that will be excluded from the coverage report.\n%   Defaults to reading the file 'excludedFiles.json'.\n% PDFReport : logical, optional\n%   Add to generate a PDF report. Defaults to true.\n% JUnitResults : logical, optional\n%   Add to generate a JUnit report. Defaults to true.\n% CoberturaCodeCoverageXML : logical, optional\n%   Add to generate a XML Cobertura coverage report. Defaults to true.\n% CoberturaCodeCoverageHTML : logical, optional\n%   Add to generate a HTML Cobertura coverage report. Defaults to true.\n%\n%\n% Returns\n% -------\n% result : matlab.unittest.TestResult\n%\n%\n% Examples\n% --------\n%       result = run_testsuite('TestTag', 'Unit');   \n%       result = run_testsuite('TestTag', 'Unit', ...\n%                'ExcludedFiles', {'function_1.m');\n% \n\np = inputParser;\np.addParameter('srcFolderName', 'src', @ischar);\np.addParameter('TestTag', '', @ischar);\np.addParameter('ExcludedFiles', {}, @iscell);\np.addParameter('PDFReport', true, @islogical);\np.addParameter('JUnitResults', true, @islogical);\np.addParameter('CoberturaCodeCoverageXML', true, @islogical);\np.addParameter('CoberturaCodeCoverageHTML', true, @islogical);\n\np.parse(varargin{:});\n\nsrcFolderName            = p.Results.srcFolderName;\ntestTag                  = p.Results.TestTag;\nproducePDFReport         = p.Results.PDFReport;\nproduceJUnit             = p.Results.JUnitResults;\nproduceCoberturaXML      = p.Results.CoberturaCodeCoverageXML;\nproduceCoberturaHTML     = p.Results.CoberturaCodeCoverageHTML;\nexcludedFiles            = p.Results.ExcludedFiles;\n\n% Import required Matlab libraries\nimport matlab.unittest.TestSuite\nimport matlab.unittest.TestRunner\nimport matlab.unittest.plugins.XMLPlugin\nimport matlab.unittest.plugins.TestReportPlugin\nimport matlab.unittest.plugins.CodeCoveragePlugin\nimport matlab.unittest.plugins.codecoverage.CoverageReport\nimport matlab.unittest.plugins.codecoverage.CoberturaFormat\nimport matlab.unittest.selectors.HasTag\n\n% Define folder structure\nrootDir = getRootDir();\ntestFolder = fullfile(rootDir, 'tests');\nsrcFolder = fullfile(rootDir, srcFolderName);\nreportFolder = fullfile(testFolder, 'reports');\n\n% Add source folder plus all subfolders to the path.\naddFilesToPath(srcFolder);\n\n% Create test suite\nsuite = TestSuite.fromFolder(testFolder, 'IncludingSubfolders', true);\nrunner = TestRunner.withTextOutput;\n\n% Exclude files from coverage report\ncodeFilePaths = excludeFilesFromCoverage(srcFolder, excludedFiles);\n\n% Produce JUnit report\nif produceJUnit\n    mkdirIfNeeded(reportFolder)\n    xmlFile = fullfile(reportFolder, 'junit.xml');\n    runner.addPlugin(XMLPlugin.producingJUnitFormat(xmlFile));\nend\n\n% Prepare HTML format output\nif produceCoberturaHTML\n    mkdirIfNeeded(reportFolder)\n    reportFileHTML = 'coverage.html';\n    pluginHTML = CodeCoveragePlugin.forFile(codeFilePaths,...\n    'Producing', CoverageReport(reportFolder, 'MainFile', reportFileHTML));\n    runner.addPlugin(pluginHTML);\nend\n\n% Prepare XML format output\nif produceCoberturaXML\n    mkdirIfNeeded(reportFolder)\n    reportFileXML = fullfile(reportFolder, 'coverage.xml');\n    reportFormat = CoberturaFormat(reportFileXML);\n    pluginXML = CodeCoveragePlugin.forFile(codeFilePaths,...\n        'Producing', reportFormat);\n    runner.addPlugin(pluginXML);\nend\n\n% Produce PDF test report (Not supported on MacOS platform)\nif producePDFReport\n    if ismac\n        warning('MATLAB:testArtifact:unSupportedPlatform', ...\n            'Producing a PDF test report is not currently supported on MacOS platforms.');\n    else\n        mkdirIfNeeded(reportFolder);\n        reportFilePDF = fullfile(reportFolder, 'testreport.pdf');\n        runner.addPlugin(TestReportPlugin.producingPDF(reportFilePDF));        \n    end\nend\n\n% Select tests with specific TestTag\nif testTag\n    if ~isempty(suite.selectIf(HasTag(testTag)))\n        suite = suite.selectIf(HasTag(testTag));\n    end\nend\n\n% Run testsuite\nresult = runner.run(suite);\n\n% Print coverage result to command window\nif isfile(reportFileXML)\n    printCoverage(reportFileXML)\nend\n\n\nfunction rootDir = getRootDir\n    here = pwd;\n    idx = strfind(here, filesep);\n    rootDir = fullfile(here(1:idx(end)-1));\n\nfunction mkdirIfNeeded(dir)\n    if exist(dir,'dir') ~= 7\n        mkdir(dir);\n    end\n\nfunction excludedFiles = readExcludedFiles\n    try\n        json = fileread('excludedFiles.json');\n        excludedFiles = jsondecode(json);\n    catch ME\n        msg = strcat(ME.message, ' No files will be excluded from code coverage.');\n        warning(msg)\n    end\n\nfunction codeFilePaths = excludeFilesFromCoverage(srcFolder, excludedFiles)\n    dirOut = dir(fullfile(srcFolder, '**', '*.m'));\n    codeFilePaths = string({dirOut.folder}) + filesep + string({dirOut.name});\n    codeFilePaths(contains(codeFilePaths, excludedFiles)) = [];\n\nfunction addFilesToPath(srcFolder)\n    if exist(srcFolder, 'dir') == 7\n        addpath(genpath(srcFolder));\n    else\n        error('Cannot find source folder: %s', srcFolder);\n    end\n\nfunction printCoverage(coverageFile)\n    S = parseXML(coverageFile);\n    index = find(strcmp('line-rate', {S.Attributes.Name}));\n    coverage = str2double(S.Attributes(index).Value)*100;\n    formatSpec = '%.2f%% covered \\n';\n    fprintf(formatSpec, coverage)\n\n\n\nAdditionally, we can selectively run test by defining TestTags. In the example above, we added the tag ‘Unit’. You can then call the function in the MATLAB command window to run all tests with the tag ‘Unit’ with\nresult = run_testsuite('TestTag', 'Unit')\n\n\n\n\n\n\nTip\n\n\n\nIf you want to quickly check whether your tests pass without having to start up Matlab, you can also call run_testsuite from the terminal. In the folder containing the function, execute\nmatlab -batch \"run_testsuite('TestTag', 'Unit')\"",
     "crumbs": [
       "Guides",
-      "💻 **Research Software**",
+      "{{< fa laptop >}} **Research Software**",
       "Software testing",
       "Testing with MATLAB"
     ]
