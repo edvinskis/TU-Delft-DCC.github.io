@@ -5,8 +5,9 @@
 # Uncomment and populate the next line accordingly
 date: 2025-02-01
 
-# We use this key to indicate the last modified date [automatic entry]
-date-modified: last-modified
+# We use this key to indicate the last modified date [manual entry, use YYYY-MM-DD]
+# Uncomment and populate the next line accordingly
+date-modified: 2025-07-11
 
 # Do not modify
 lang: en
@@ -49,7 +50,7 @@ categories:
 > 
 > **Robert C. Martin** (Uncle Bob)
 
-A "long method" is a common code where a method or function becomes overly long and handles multiple responsibilities at once. This makes the code hard to read, understand, test, and maintain. Long methods often indicate that a function is doing too much and may benefit from being broken into smaller, more focussed helper functions.
+A "long method" is a common code smell where a method or function becomes overly long and handles multiple responsibilities at once. This makes the code hard to read, understand, test, and maintain. Long methods often indicate that a function is doing too much and may benefit from being broken into smaller, more focussed helper functions.
 
 ## Symptoms
 A long method often:
