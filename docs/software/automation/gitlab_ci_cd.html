@@ -2,12 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-08-22">
 
-<title>Configure SSL certificates</title>
+<title>GitLab pipelines</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,71 +21,37 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<link href="../../docs/infrastructure/web_servers.html" rel="prev">
-<link href="../../docs/img/cone.png" rel="icon" type="image/png">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-95f147d06fdb9f8ce149f95e323965f4.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-95f147d06fdb9f8ce149f95e323965f4.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-95f147d06fdb9f8ce149f95e323965f4.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-9f63569fccaa7f60ebae5bbb4b4d3d13.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-b87838516fd491c7318cc311eb8edcd8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-9f63569fccaa7f60ebae5bbb4b4d3d13.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
-<script src="../../site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
-<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../docs/software/automation/gitlab/gitlab_docker.html" rel="next">
+<link href="../../../docs/software/automation/github_ci_cd.html" rel="prev">
+<link href="../../../docs/img/cone.png" rel="icon" type="image/png">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-1d5e050edb13250d4f64432100cad504.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-1d5e050edb13250d4f64432100cad504.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-1d5e050edb13250d4f64432100cad504.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-9f63569fccaa7f60ebae5bbb4b4d3d13.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-b87838516fd491c7318cc311eb8edcd8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../site_libs/bootstrap/bootstrap-9f63569fccaa7f60ebae5bbb4b4d3d13.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
+<link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -115,7 +82,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <style>html{ scroll-behavior: smooth; }</style>
 
 
-<link rel="stylesheet" href="../../themes/custom.css">
+<link rel="stylesheet" href="../../../themes/custom.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -287,9 +254,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../docs/img/tud/logo_white_crop.png" alt="" class="navbar-logo light-content">
-    <img src="../../docs/img/tud/logo_white_crop.png" alt="" class="navbar-logo dark-content">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../docs/img/tud/logo_white_crop.png" alt="" class="navbar-logo light-content">
+    <img src="../../../docs/img/tud/logo_white_crop.png" alt="" class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -299,11 +266,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../../index.html" aria-current="page"> 
+    <a class="nav-link active" href="../../../index.html" aria-current="page"> 
 <span class="menu-text"><ins>Guides</ins></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../docs/resources/courses.html"> 
+    <a class="nav-link" href="../../../docs/resources/courses.html"> 
 <span class="menu-text"><ins>Courses and Workshops</ins></span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -312,11 +279,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-community">    
         <li>
-    <a class="dropdown-item" href="../../CONTRIBUTING.html">
+    <a class="dropdown-item" href="../../../CONTRIBUTING.html">
  <span class="dropdown-text">Contributing</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../CODE_OF_CONDUCT.html">
+    <a class="dropdown-item" href="../../../CODE_OF_CONDUCT.html">
  <span class="dropdown-text">Code of Conduct</span></a>
   </li>  
         <li>
@@ -328,7 +295,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-    <a href="https://github.com/TU-Delft-DCC/TU-Delft-DCC.github.io/" title="DCC GitHub" class="quarto-navigation-tool px-1" aria-label="DCC GitHub"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
@@ -338,34 +304,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../docs/infrastructure/getting_started.html"><img src="../../docs/img/gear.svg" style="filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);height:1em"> <strong>Computing Infrastructure</strong></a></li><li class="breadcrumb-item"><a href="../../docs/infrastructure/remote_servers.html">Remote servers</a></li><li class="breadcrumb-item"><a href="../../docs/infrastructure/web_servers.html">Web servers</a></li><li class="breadcrumb-item"><a href="../../docs/infrastructure/VPS_SSL_Certs.html">SSL certificates</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/software/getting_started.html"><img src="../../../docs/img/laptop-code-solid.svg" style="filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);height:1em"> <strong>Research Software</strong></a></li><li class="breadcrumb-item"><a href="../../../docs/software/automation/ci_cd.html">Automation</a></li><li class="breadcrumb-item"><a href="../../../docs/software/automation/gitlab_ci_cd.html">GitLab pipelines</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
   </nav>
-  <div id="quarto-announcement" data-announcement-id="a9f863d6d8504ed974a028f228749884" class="alert alert-success hidden"><i class="bi bi-pencil quarto-announcement-icon"></i><div class="quarto-announcement-content">
-<p><strong>Information!</strong> We are now actively updating our content. Please be aware that content and locations are subject to change. Thank you for your patience!</p>
+  <div id="quarto-announcement" data-announcement-id="eac685495375b2cca71746dc3171a8e4" class="alert alert-success hidden"><i class="bi bi-patch-check quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p><strong>Great news!</strong> We have had a major update to our guides! Feel free to explore! If you have any feedback, please visit our <a href="https://tu-delft-dcc.github.io/CONTRIBUTING.html">contributing guidelines</a>. If you find these guides useful, <a href="https://github.com/TU-Delft-DCC/TU-Delft-DCC.github.io"><i class="fa-regular fa-star" aria-label="star"></i> us on GitHub</a>.</p>
 </div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
-      <a href="../../index.html" class="sidebar-logo-link">
-      </a>
-      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span style="filter:grayscale(100%);">⌂</span> <strong>Home</strong></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/about.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About the guides</span></a>
   </div>
 </li>
@@ -375,7 +337,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text"><img src="../../docs/img/laptop-code-solid.svg" style="filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);height:1em"> <strong>Research Software</strong></span></a>
+ <span class="menu-text"><img src="../../../docs/img/laptop-code-solid.svg" style="filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);height:1em"> <strong>Research Software</strong></span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -383,13 +345,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/getting_started.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/getting_started.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Getting started</span></a>
   </div>
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../docs/software/fair_software/fair.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../docs/software/fair_software/fair.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">FAIR Software</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -398,13 +360,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/fair_software/checklist.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/fair_software/checklist.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">FAIR checklist for research software</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/fair_software/software_management_plan.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/fair_software/software_management_plan.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Software management plan</span></a>
   </div>
 </li>
@@ -412,7 +374,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../docs/software/development_workflow/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../docs/software/development_workflow/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Development workflow</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -421,25 +383,37 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/development_workflow/project_management.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/development_workflow/project_management.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Project management</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/development_workflow/project_structure.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/development_workflow/branch_management.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Branch management</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/software/development_workflow/collaboration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Collaboration</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/software/development_workflow/project_structure.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Project structure</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/development_workflow/reusing_projects.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/development_workflow/reusing_projects.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Project templates and reusability</span></a>
   </div>
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../docs/software/development_workflow/envs_dependencies.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../docs/software/development_workflow/envs_dependencies.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Environments and dependencies</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -448,19 +422,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/development_workflow/envs_dependencies/python_envs_dependencies.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/development_workflow/envs_dependencies/python_envs_dependencies.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Python</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/development_workflow/envs_dependencies/matlab_envs_dependencies.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/development_workflow/envs_dependencies/matlab_envs_dependencies.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">MATLAB</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/development_workflow/envs_dependencies/r_envs_dependencies.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/development_workflow/envs_dependencies/r_envs_dependencies.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">R</span></a>
   </div>
 </li>
@@ -468,25 +442,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/development_workflow/workflow_management.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/development_workflow/workflow_management.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Workflow management</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/development_workflow/branch_management.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Branch management</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../docs/software/development_workflow/collaboration.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Collaboration</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../docs/software/development_workflow/software_design.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/development_workflow/software_design.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Software design</span></a>
   </div>
 </li>
@@ -494,7 +456,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../docs/software/documentation/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../docs/software/documentation/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Documentation</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -503,25 +465,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/documentation/write_a_readme.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/documentation/write_a_readme.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">README</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/documentation/license.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/documentation/license.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Software licenses</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/documentation/citation.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/documentation/citation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">CITATION</span></a>
   </div>
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../docs/software/documentation/code_documentation/code_documentation.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../docs/software/documentation/code_documentation/code_documentation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Code documentation</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -530,19 +492,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/documentation/code_documentation/python_documentation.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/documentation/code_documentation/python_documentation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Python projects</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/documentation/code_documentation/matlab_documentation.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/documentation/code_documentation/matlab_documentation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">MATLAB projects</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/documentation/code_documentation/r_documentation.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/documentation/code_documentation/r_documentation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">R projects</span></a>
   </div>
 </li>
@@ -550,25 +512,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/documentation/tooling.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/documentation/tooling.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Tooling</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/documentation/hosting.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/documentation/hosting.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Hosting</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/documentation/contributing_guidelines.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/documentation/contributing_guidelines.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Contributing guidelines</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/documentation/code_of_conduct.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/documentation/code_of_conduct.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Code of conduct</span></a>
   </div>
 </li>
@@ -576,7 +538,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../docs/software/code_quality/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../docs/software/code_quality/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Code quality</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -585,19 +547,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/code_quality/code_style.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/code_quality/code_style.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Code style</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/code_quality/refactoring.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/code_quality/refactoring.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Refactoring</span></a>
   </div>
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../docs/software/code_quality/code_smells.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../docs/software/code_quality/code_smells.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Code smells</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -606,63 +568,63 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/code_quality/code_smells/long_method.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/code_quality/code_smells/long_method.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Long method</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/code_quality/code_smells/large_class.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/code_quality/code_smells/large_class.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Large classes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/code_quality/code_smells/duplication.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/code_quality/code_smells/duplication.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Code duplication</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/code_quality/code_smells/hardcoded_values.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/code_quality/code_smells/hardcoded_values.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Hard-coded values</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/code_quality/code_smells/deep_nesting.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/code_quality/code_smells/deep_nesting.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Deep nesting</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/code_quality/code_smells/many_arguments.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Many inputs</span></a>
+  <a href="../../../docs/software/code_quality/code_smells/many_arguments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Many arguments</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/code_quality/code_smells/inappropriate_intimacy.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/code_quality/code_smells/inappropriate_intimacy.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Inappropriate intimacy</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/code_quality/code_smells/side_effects.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/code_quality/code_smells/side_effects.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Side effects</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/code_quality/code_smells/dead_code.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Commented out code</span></a>
+  <a href="../../../docs/software/code_quality/code_smells/dead_code.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dead code</span></a>
   </div>
 </li>
       </ul>
   </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/code_quality/online_services.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/code_quality/online_services.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Online services</span></a>
   </div>
 </li>
@@ -670,7 +632,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../docs/software/testing/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../docs/software/testing/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Software testing</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -679,37 +641,37 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/testing/strategies.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/testing/strategies.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Roadmap to testing</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/testing/test_types.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/testing/test_types.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Test types</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/testing/intermediate.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/testing/intermediate.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Advanced concepts</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/testing/python.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/testing/python.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Testing in Python</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/testing/matlab.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/testing/matlab.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Testing in MATLAB</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/testing/r_test.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/testing/r_test.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Testing in R</span></a>
   </div>
 </li>
@@ -717,7 +679,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../docs/software/releases_archiving/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../docs/software/releases_archiving/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Publish and share</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -726,7 +688,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../docs/software/releases_archiving/packaging/packaging.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../docs/software/releases_archiving/packaging/packaging.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Packaging</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -735,13 +697,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/releases_archiving/packaging/packaging_python.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/releases_archiving/packaging/packaging_python.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Create a Python package</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/releases_archiving/packaging/packaging_r.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/releases_archiving/packaging/packaging_r.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Create an R package</span></a>
   </div>
 </li>
@@ -749,7 +711,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../docs/software/releases_archiving/releases/releases.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../docs/software/releases_archiving/releases/releases.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Releases</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -758,13 +720,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/releases_archiving/releases/releases_pypi.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/releases_archiving/releases/releases_pypi.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Release your Python package on PyPI</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/releases_archiving/releases/releases_cran.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/releases_archiving/releases/releases_cran.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Release your R package on CRAN</span></a>
   </div>
 </li>
@@ -772,7 +734,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/releases_archiving/archiving.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/releases_archiving/archiving.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Archiving</span></a>
   </div>
 </li>
@@ -780,33 +742,44 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../docs/software/automation/ci_cd.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../docs/software/automation/ci_cd.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Automation</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/automation/gitlab/gitlab_docker.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/automation/github_ci_cd.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">GitHub Actions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../docs/software/automation/gitlab_ci_cd.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">GitLab pipelines</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth3 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../docs/software/automation/gitlab/gitlab_docker.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Continuous Integration with GitLab</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/software/automation/gitlab/runner_matlab.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/software/automation/gitlab/runner_matlab.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Setting up a GitLab runner for MATLAB</span></a>
   </div>
 </li>
       </ul>
   </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../docs/software/tools/tools.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tooling</span></a>
-  </div>
-</li>
+      </ul>
+  </li>
       </ul>
   </li>
         <li class="sidebar-item">
@@ -815,7 +788,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true">
- <span class="menu-text"><img src="../../docs/img/folder-regular.svg" style="filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);height:1em"> <strong>Data Management</strong></span></a>
+ <span class="menu-text"><img src="../../../docs/img/folder-regular.svg" style="filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);height:1em"> <strong>Data Management</strong></span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -823,19 +796,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/data/getting_started.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/data/getting_started.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Getting started</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/data/fair_data/fair.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/data/fair_data/fair.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">FAIR Data</span></a>
   </div>
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../docs/data/planning/planning.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../docs/data/planning/planning.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Planning</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -844,7 +817,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/data/planning/privacy.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/data/planning/privacy.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Privacy</span></a>
   </div>
 </li>
@@ -852,7 +825,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../docs/data/data_collection/collection.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../docs/data/data_collection/collection.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Collection</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -861,19 +834,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/data/data_collection/data_conventions.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/data/data_collection/data_conventions.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data conventions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/data/data_collection/access_reuse.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/data/data_collection/access_reuse.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Access and reuse</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/data/data_collection/elab_rspace.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/data/data_collection/elab_rspace.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">eLabJournal and RSpace</span></a>
   </div>
 </li>
@@ -881,13 +854,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/data/data_processing.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/data/data_processing.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data processing</span></a>
   </div>
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../docs/data/data_storage/storage.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../docs/data/data_storage/storage.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Storage</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -896,7 +869,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../docs/data/data_storage/storage_options.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../docs/data/data_storage/storage_options.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Storage options</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -905,13 +878,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/data/data_storage/project_drive_request.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/data/data_storage/project_drive_request.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Access and request space for <em>Project Data Storage</em></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/data/data_storage/project_drive_mounting.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/data/data_storage/project_drive_mounting.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Mount <em>Project Drive</em> on server</span></a>
   </div>
 </li>
@@ -919,19 +892,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/data/data_storage/security.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/data/data_storage/security.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data security</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/data/data_storage/sharing.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/data/data_storage/sharing.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data sharing</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/data/data_storage/backup.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/data/data_storage/backup.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data backup</span></a>
   </div>
 </li>
@@ -939,7 +912,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../docs/data/data_publishing/archival_publishing_index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../docs/data/data_publishing/archival_publishing_index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Archive and publish</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -948,19 +921,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/data/data_publishing/licensing_data.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/data/data_publishing/licensing_data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Licensing</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/data/data_publishing/publishing.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/data/data_publishing/publishing.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Publishing data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/data/data_publishing/offboarding.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/data/data_publishing/offboarding.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Offboarding and ownership</span></a>
   </div>
 </li>
@@ -974,7 +947,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="true">
- <span class="menu-text"><img src="../../docs/img/gear.svg" style="filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);height:1em"> <strong>Computing Infrastructure</strong></span></a>
+ <span class="menu-text"><img src="../../../docs/img/gear.svg" style="filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);height:1em"> <strong>Computing Infrastructure</strong></span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -982,93 +955,88 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/infrastructure/getting_started.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/infrastructure/getting_started.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Getting started</span></a>
   </div>
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../docs/infrastructure/remote_servers.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../docs/infrastructure/remote_servers.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Remote servers</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-17" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-17" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/infrastructure/VPS_request.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Server request form</span></a>
+  <a href="../../../docs/infrastructure/vps_request.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Request VPS</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/infrastructure/VPS_SSH.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/infrastructure/vps_ssh.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Server connection</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/infrastructure/moving_data.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../docs/infrastructure/moving_data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data transfer</span></a>
   </div>
 </li>
+      </ul>
+  </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../docs/infrastructure/web_servers.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../docs/infrastructure/web_servers.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Web servers</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-18" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="" class="collapse list-unstyled sidebar-section depth3 show">  
+      <ul id="quarto-sidebar-section-18" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../docs/infrastructure/VPS_SSL_Certs.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../docs/infrastructure/ssl_certificates.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">SSL certificates</span></a>
   </div>
 </li>
       </ul>
   </li>
-      </ul>
+          <li class="sidebar-item">
+ <span class="menu-text"><br></span>
   </li>
       </ul>
   </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../listings.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><img src="../../../docs/img/catalog.svg" style="filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);height:1em"> <strong>Catalogue</strong></span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
-  <li><a href="#what-this-documentation-will-help-achieve" id="toc-what-this-documentation-will-help-achieve" class="nav-link" data-scroll-target="#what-this-documentation-will-help-achieve">What this documentation will help achieve</a></li>
-  <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites">Prerequisites</a></li>
-  <li><a href="#toolssoftware" id="toc-toolssoftware" class="nav-link" data-scroll-target="#toolssoftware">Tools/Software</a></li>
-  <li><a href="#steps" id="toc-steps" class="nav-link" data-scroll-target="#steps">Steps</a>
-  <ul class="collapse">
-  <li><a href="#step-1.-generate-.csr-file" id="toc-step-1.-generate-.csr-file" class="nav-link" data-scroll-target="#step-1.-generate-.csr-file">Step 1. Generate .csr file</a></li>
-  <li><a href="#step-2.-secure-copy-.csr-file-from-server-to-local-machine" id="toc-step-2.-secure-copy-.csr-file-from-server-to-local-machine" class="nav-link" data-scroll-target="#step-2.-secure-copy-.csr-file-from-server-to-local-machine">Step 2. Secure-copy .csr file from server to local machine</a></li>
-  <li><a href="#step-3.-submit-certificate-server-request-to-tu-delft-ict-via-topdesk-form" id="toc-step-3.-submit-certificate-server-request-to-tu-delft-ict-via-topdesk-form" class="nav-link" data-scroll-target="#step-3.-submit-certificate-server-request-to-tu-delft-ict-via-topdesk-form">Step 3. Submit Certificate Server Request to TU Delft ICT via TopDesk form</a></li>
-  </ul></li>
-  <li><a href="#notes-and-next-steps" id="toc-notes-and-next-steps" class="nav-link" data-scroll-target="#notes-and-next-steps">Notes and Next Steps</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/TU-Delft-DCC/TU-Delft-DCC.github.io/issues/new/choose" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../docs/infrastructure/getting_started.html"><img src="../../docs/img/gear.svg" style="filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);height:1em"> <strong>Computing Infrastructure</strong></a></li><li class="breadcrumb-item"><a href="../../docs/infrastructure/remote_servers.html">Remote servers</a></li><li class="breadcrumb-item"><a href="../../docs/infrastructure/web_servers.html">Web servers</a></li><li class="breadcrumb-item"><a href="../../docs/infrastructure/VPS_SSL_Certs.html">SSL certificates</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../docs/software/getting_started.html"><img src="../../../docs/img/laptop-code-solid.svg" style="filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);height:1em"> <strong>Research Software</strong></a></li><li class="breadcrumb-item"><a href="../../../docs/software/automation/ci_cd.html">Automation</a></li><li class="breadcrumb-item"><a href="../../../docs/software/automation/gitlab_ci_cd.html">GitLab pipelines</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Configure SSL certificates</h1>
+<h1 class="title">GitLab pipelines</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Infrastructure</div>
-    <div class="quarto-category">Servers</div>
-    <div class="quarto-category">VPS</div>
+    <div class="quarto-category">Software</div>
+    <div class="quarto-category">Automation</div>
+    <div class="quarto-category">GitLab</div>
+    <div class="quarto-category">CI/CD</div>
   </div>
   </div>
 
@@ -1077,11 +1045,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Last reviewed</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 22, 2025</p>
+    </div>
+  </div>
   
     <div>
     <div class="quarto-title-meta-heading">Last modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">September 19, 2025</p>
+      <p class="date-modified">October 28, 2025</p>
     </div>
   </div>
     
@@ -1091,105 +1065,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<script async="" defer="" src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-<section id="background" class="level2">
-<h2 class="anchored" data-anchor-id="background">Background</h2>
-<p>It is common practice to have web servers serving content over HTTPS, which is the secure version of HTTP. In order to do this and make the connection secure, you need an SSL certificate from a certificate signing authority.</p>
-<p>The role of the SSL certificate is to indicate the encryption of user data from a server exposed on the web. SSL is a key for encrypting information. When a website’s certificate is expired or invalid, or if it using a self-signed (unofficial) certificate, as a user you either get a warning saying, “go back to safety,” or can’t access the website over https - instead you see a message that says “Not Secure” in your web browser. This means that the certificate is not signed by an authority, so it’s not trusted.</p>
-<p>In theory, if your web server is universally accessible and doesn’t contain forms for users with personal or confidential information, there is no strict need for HTTPS connection. But, HTTPS is the modern standard and without it, visitors will have impression that the website is not safe. Therefore it is good practice to always have HTTPS on your web server.</p>
+
+<script async="" defer="" src="https://scripts.simpleanalyticscdn.com/latest.js"></script><p>As previously mentioned in the <a href="../../../docs/software/development_workflow/project_management.html#version-control-platforms">Project management</a> section, TU Delft has its own GitLab instance. However, it does not (yet) have preconfigured servers available to run <a href="https://docs.gitlab.com/ee/ci/pipelines/"><strong>GitLab pipelines</strong></a>, the equivalent of GitHub Actions.</p>
+<p>In order to set up a pipeline, you will need to request a TU Delft Virtual Private Server and configure a GitLab runner there. The DCC has developed a step-by-step guide (see below), along with guidance on setting up a CI pipeline for a MATLAB environment.</p>
+<div class="content-block">
+<div class="features">
+<section id="continuous-integration-with-gitlab" class="level3 feature">
+<h3 class="anchored" data-anchor-id="continuous-integration-with-gitlab"><i class="fa-brands fa-square-gitlab" aria-label="square-gitlab"></i> Continuous Integration with GitLab</h3>
+<p>Set up CI/CD for your project in TU Delft GitLab.</p>
+<div class="learn-more">
+<p><a href="../../../docs/software/automation/gitlab/gitlab_docker.html">Learn more »</a></p>
+</div>
 </section>
-<section id="what-this-documentation-will-help-achieve" class="level2">
-<h2 class="anchored" data-anchor-id="what-this-documentation-will-help-achieve">What this documentation will help achieve</h2>
-<p>SSL certificates for TU Delft researchers and staff may be requested by contacting the ICT service desk. TU Delft ICT will order SSL certificates on your behalf from a trusted certificate signing authority.</p>
+<section id="setting-up-a-gitlab-runner-for-matlab" class="level3 feature">
+<h3 class="anchored" data-anchor-id="setting-up-a-gitlab-runner-for-matlab"><i class="fa-brands fa-square-gitlab" aria-label="square-gitlab"></i> Setting up a GitLab runner for MATLAB</h3>
+<p>Create a CI pipeline for a MATLAB environment in TU Delft GitLab.</p>
+<div class="learn-more">
+<p><a href="../../../docs/software/automation/gitlab/runner_matlab.html">Learn more »</a></p>
+</div>
 </section>
-<section id="prerequisites" class="level2">
-<h2 class="anchored" data-anchor-id="prerequisites">Prerequisites</h2>
-<ul>
-<li>TU Delft netID</li>
-<li>Linux-based VPS provided by TU Delft ICT</li>
-<li>(optional) 1-step SSH connection established (see instructions ___)</li>
-</ul>
-</section>
-<section id="toolssoftware" class="level2">
-<h2 class="anchored" data-anchor-id="toolssoftware">Tools/Software</h2>
-<ul>
-<li>None</li>
-</ul>
-</section>
-<section id="steps" class="level2">
-<h2 class="anchored" data-anchor-id="steps">Steps</h2>
-<ol type="1">
-<li>Generate .csr file</li>
-<li>Secure-copy .csr file from server to local machine</li>
-<li>Submit Certificate Server Request to TU Delft ICT via TopDesk form</li>
-</ol>
-<section id="step-1.-generate-.csr-file" class="level3">
-<h3 class="anchored" data-anchor-id="step-1.-generate-.csr-file">Step 1. Generate .csr file</h3>
-<p>The Certificate Signing Request (.csr) file is a file generated by you in a standard format that contains all the information the signing authority needs to create a signed certificate. You will need to include this .csr file in submitting your SSL certificate request form to TU Delft ICT, and you should generate it on your VPS directly. The instructions for generating a .csr file come from <a href="https://hostadvice.com/how-to/configure-apache-with-tls-ssl-certificate-on-ubuntu-18/">here</a>.</p>
-<p>SSH to your VPS (____ link if you have followed the process to connect directly, you can use: <code>username@localmachine ~ % ssh externalserveralias</code>)</p>
-<p>Enter following command in the terminal: <em>Note:</em> replace mydomain with your actual domain name:</p>
-<p><code>username@externalserver ~ % openssl req -new -newkey rsa:2048 -nodes -keyout mydomain.key -out mydomain.csr</code></p>
-<p>You will be prompted to answer a series of questions:</p>
-<ul>
-<li>Country name: 2 letter abbreviation for your country. Netherlands is NL.</li>
-<li>State or Province Name: this is where your org operates from. Zuid-Holland.</li>
-<li>Locality Name - name of the city your org operates from. Don’t use abbreviations in this field.</li>
-<li>Organisation Name - use your (organisation’s) full name.</li>
-<li>Organisational Unit Name - Use a department name ex. “IT Department” or “Library”</li>
-<li>Common Name - the FQDN that you are requesting an SSL certificate for.</li>
-<li>Email address</li>
-<li>Optional password (can skip step)</li>
-<li>Optional company name</li>
-</ul>
-<p>Your CSR file has now been generated. To find your CSR, take a look at the contents of your current working directory with the ls command. You should notice two new files ending with “.key” and “.csr” respectively. For example:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">username@externalserver</span> ~ % ls</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">-rw-r--r--.</span> 1 root root 1082 Jan 31 12:10 mydomain.csr</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">-rw-------.</span> 1 root root 1704 Jan 31 12:10 mydomain.key</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>The .key file should be kept private on your server. The .csr file is your certificate signing request, and can be sent to a Certificate Authority.</p>
-</section>
-<section id="step-2.-secure-copy-.csr-file-from-server-to-local-machine" class="level3">
-<h3 class="anchored" data-anchor-id="step-2.-secure-copy-.csr-file-from-server-to-local-machine">Step 2. Secure-copy .csr file from server to local machine</h3>
-<p>In this step we use Secure Copy protocol (SCP) which is a means of securely transferring files between hosts on a network. This example will save the file in the Home directory, but you can also save it into any other project folder on your machine.</p>
-<p>Navigate to directory of choice. In this case, we’ll use home.</p>
-<p><code>username@localmachine .ssh % cd ~</code></p>
-<p>Use <code>scp</code> to secure copy .csr file from your external server. If you have followed ___these steps to enable 1-step SSH access to your VPS, you can do this using the alias you set, and the .csr file name which should be your external server FQDN.csr. Don’t forget to add the <code>.</code> at the end of the command.</p>
-<p><code>username@localmachine ~ % scp externalserveralias:~/external-server-FQDN.nl.csr .</code></p>
-<p>Check to see that it saved on your local machine using <code>ls</code>:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">username@localmachine</span> ~ % ls</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Applications</span>        Movies</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">Desktop</span>             Music</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="ex">Documents</span>           Pictures</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ex">Downloads</span>           Public</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="ex">Dropbox</span>             external-server-FQDN.nl.csr</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="ex">Library</span>             surfdrive</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>If you have not set up 1-step SSH connection to your VPS, the file transfer procedure from the VPS to your local computer is composed of two steps:</p>
-<ol type="1">
-<li>From the VPS to the intermediary server, and</li>
-<li>From the intermediary server to the local computer.</li>
-</ol>
-<p>For the first step use:</p>
-<p><code>scp &lt;path to the csr file&gt; &lt;netid&gt;@&lt;intermediary_server_address&gt;:&lt;a path in the intermediary_server&gt;</code> (e.g., <code>scp thredds.tudelft.nl.csr mynetid@linux-bastion-ex.tudelft.nl:~</code>).</p>
-<p>In the second step, you need to copy the file from the intermediary server to the local computer using the same command but with a different source and destination:</p>
-<p><code>scp &lt;netid&gt;@&lt;intermediary_server_address&gt;:&lt;the path in the intermediary_server to the selected file&gt; &lt;a path in the local computer&gt;</code> (e.g., <code>scp mynetid@linux-bastion-ex.tudelft.nl:~/thredds.tudelft.nl.csr .</code>)</p>
-<p>Please note, if you are a Windows user, for the second step you need to install cygwin and ssh to the intermediary server using:</p>
-<p><code>ssh &lt;netid&gt;@&lt;intermediary_server_address&gt;</code> (e.g., <code>ssh mynetid@linux-bastion-ex.tudelft.nl</code>).</p>
-</section>
-<section id="step-3.-submit-certificate-server-request-to-tu-delft-ict-via-topdesk-form" class="level3">
-<h3 class="anchored" data-anchor-id="step-3.-submit-certificate-server-request-to-tu-delft-ict-via-topdesk-form">Step 3. Submit Certificate Server Request to TU Delft ICT via TopDesk form</h3>
-<p>TU Delft ICT will use the information stored in your .csr file to get the SSL certificate from the signing authority and send the SSL certificate to you. In order to make this request, you must attach your .csr file from the previous step.</p>
-<p>Navigate to TopDesk form for TU Delft. <a href="https://tudelft.topdesk.net/tas/public/ssp/content/serviceflow?unid=62aeef08314247f3aba7ff2297d011da">TOPdesk SSL certificate server request</a>.</p>
-<p>Choose “Attach file” and navigate to directory where .csr file is stored** (in this example, it is in “Home”). Select “external-server-FQDN.nl.csr”.</p>
-<p>Submit request. You can delete this file from your home directory after you submit the form.</p>
-<p>ICT will respond with a SSL certificate (with the extension .crt, .cer, and/or .pem) that comes from the signing authority. When you have this, you can configure the SSL certificate to work with the web server on your VPS.</p>
-</section>
-</section>
-<section id="notes-and-next-steps" class="level2">
-<h2 class="anchored" data-anchor-id="notes-and-next-steps">Notes and Next Steps</h2>
-<p>SSL certificates can expire - TU Delft ICT will let you know when this is about to happen. To renew, you will need a new .csr file. You can send this to TU Delft ICT via the original TopDesk form and they will forward to the signing authority.</p>
-<p>To use your SSL certificate with your web server, you need to change some configuration settings based on the web server you are using (e.g., Apache, nginx). See ___Set up an Apache web server for more information.</p>
+</div>
+</div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1607,11 +1505,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../docs/infrastructure/web_servers.html" class="pagination-link" aria-label="Web servers">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Web servers</span>
+      <a href="../../../docs/software/automation/github_ci_cd.html" class="pagination-link" aria-label="GitHub Actions">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">GitHub Actions</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="../../../docs/software/automation/gitlab/gitlab_docker.html" class="pagination-link" aria-label="Continuous Integration with GitLab">
+        <span class="nav-page-text">Continuous Integration with GitLab</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -1621,8 +1522,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Powered by <a href="https://quarto.org"><iconify-icon role="img" inline="" icon="simple-icons:quarto" aria-label="Icon quarto from simple-icons Iconify.design set." title="Icon quarto from simple-icons Iconify.design set."></iconify-icon> Quarto</a>.</p>
 </div>   
     <div class="nav-footer-center">
-<p>© 2025 <a href="https://www.tudelft.nl/digital-competence-centre">TU Delft DCC</a>. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a>.</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/TU-Delft-DCC/TU-Delft-DCC.github.io/issues/new/choose" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
+<p>© 2026 <a href="https://www.tudelft.nl/digital-competence-centre">TU Delft DCC</a>. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a>.</p>
+<div class="toc-actions"><ul><li><a href="https://github.com/TU-Delft-DCC/TU-Delft-DCC.github.io/issues/new/choose" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Found these guides helpful? <a href="https://github.com/TU-Delft-DCC/TU-Delft-DCC.github.io"><i class="fa-regular fa-star" aria-label="star"></i> us on GitHub</a>.</p>
 </div>
@@ -1632,5 +1533,5 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
